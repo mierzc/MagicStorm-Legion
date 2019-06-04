@@ -1,9 +1,9 @@
-﻿DELETE FROM broadcast_text WHERE ID = 147279;
-INSERT INTO broadcast_text (ID, Text) VALUES
-(147279, "Right away, General!");
-DELETE FROM broadcast_text_locale WHERE ID = 147279;
-INSERT INTO broadcast_text_locale (ID, locale, Text_lang) VALUES
-(147279, "ruRU", "Сейчас же, Генерал!");
+DELETE FROM `broadcast_text` WHERE `ID` = 147279;
+INSERT INTO `broadcast_text` (`ID`, `Text`) VALUES
+(147279, 'Right away, General!');
+DELETE FROM `broadcast_text_locale` WHERE `ID` = 147279;
+INSERT INTO `broadcast_text_locale` (`ID`, `locale`, `Text_lang`) VALUES
+(147279, 'ruRU', 'Сейчас же, Генерал!');
 
 DELETE FROM `broadcast_text` WHERE `ID` IN (147324, 147325);
 INSERT INTO `broadcast_text` (`ID`, `Text`, `Text1`, `EmoteID1`, `EmoteID2`, `EmoteID3`, `EmoteDelay1`, `EmoteDelay2`, `EmoteDelay3`, `EmotesID`, `LanguageID`, `Flags`, `ConditionID`, `SoundEntriesID1`, `SoundEntriesID2`, `VerifiedBuild`) VALUES

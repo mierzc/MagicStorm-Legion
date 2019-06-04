@@ -60,7 +60,7 @@ INSERT INTO `areatrigger_template` (`id`, `type`, `flags`, `Data0`, `Data1`, `Da
 (9175, 4, 0, 10, 10, 4, 4, 0.3, 0.3, '', 24461);
 
 DELETE FROM `creature` WHERE `id` IN (115103, 115113, 115101, 115013, 115105, @NIGHTBANE, 11489501, 11489502);
-INSERT INTO `creature` (`id`, `map`, `zoneId`, `areaId`, `spawnMask`, `PhaseGroup`, `modelid`, `equipment_id`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecs`, `spawndist`, `currentwaypoint`, `curhealth`, `curmana`, `MovementType`, `npcflag`, `unit_flags`, `dynamicflags`, `VerifiedBuild`) VALUES
+INSERT INTO `creature` (`id`, `map`, `zoneId`, `areaId`, `spawndifficulties`, `PhaseGroup`, `modelid`, `equipment_id`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecs`, `spawndist`, `currentwaypoint`, `curhealth`, `curmana`, `MovementType`, `npcflag`, `unit_flags`, `dynamicflags`, `VerifiedBuild`) VALUES
 (115103, 1651, 8443, 8443, 8388608, 0, 0, 0, -10980.71, -1865.066, 81.81189, 0, 7200, 0, 0, 0, 0, 0, 0, 0, 0, 23420),
 (115105, 1651, 0, 0, 8388608, 0, 0, 0, -10895.200, -1806.410, 91.579, 4.62, 7200, 0, 0, 0, 0, 0, 0, 0, 0, 23420),
 (115101, 1651, 0, 0, 8388608, 0, 0, 0, -10899, -2076.939, 49.55752, 0, 7200, 0, 0, 0, 0, 0, 0, 0, 0, 23420),

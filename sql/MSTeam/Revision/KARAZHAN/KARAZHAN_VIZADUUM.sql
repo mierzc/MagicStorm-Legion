@@ -61,12 +61,12 @@ INSERT INTO `creature_template_addon` (`entry`, `auras`) VALUES
 (115694, '229906');
 
 DELETE FROM `creature` WHERE `id` = 114913 AND `map` = 1651;
-INSERT INTO `creature` (`id`, `map`, `zoneId`, `areaId`, `spawnMask`, `PhaseId`, `PhaseGroup`, `modelid`, `equipment_id`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecs`, `spawndist`, `currentwaypoint`, `curhealth`, `curmana`, `MovementType`, `npcflag`, `unit_flags`, `dynamicflags`, `ScriptName`, `VerifiedBuild`) VALUES
+INSERT INTO `creature` (`id`, `map`, `zoneId`, `areaId`, `spawndifficulties`, `PhaseId`, `PhaseGroup`, `modelid`, `equipment_id`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecs`, `spawndist`, `currentwaypoint`, `curhealth`, `curmana`, `MovementType`, `npcflag`, `unit_flags`, `dynamicflags`, `ScriptName`, `VerifiedBuild`) VALUES
 ('114913','1651','8443','8443','8388608','0','0','0','0','3397.11','-2142.85','977.435','6.11565','7200','0','0','0','0','0','0','0','0','','23420'),
 ('114913','1651','8443','8443','8388608','0','0','0','0','3800.63','-1876.49','869.978','4.18863','7200','0','0','0','0','0','0','0','0','','23420');
 
 DELETE FROM `gameobject` WHERE `id` = 265486 AND `map` = 1651;
-INSERT INTO `gameobject` (`id`, `map`, `zoneId`, `areaId`, `spawnMask`, `PhaseId`, `PhaseGroup`, `position_x`, `position_y`, `position_z`, `orientation`, `rotation0`, `rotation1`, `rotation2`, `rotation3`, `spawntimesecs`, `animprogress`, `state`, `ScriptName`, `VerifiedBuild`) VALUES
+INSERT INTO `gameobject` (`id`, `map`, `zoneId`, `areaId`, `spawndifficulties`, `PhaseId`, `PhaseGroup`, `position_x`, `position_y`, `position_z`, `orientation`, `rotation0`, `rotation1`, `rotation2`, `rotation3`, `spawntimesecs`, `animprogress`, `state`, `ScriptName`, `VerifiedBuild`) VALUES
 ('265486','1651','8443','8443','8388608','0','1','3960.62','-2007.71','671.739','4.03272','0','0','-0.902368','0.430965','7200','255','1','','23420'),
 ('265486','1651','8443','8443','8388608','0','1','3496.74','-1959.66','784.618','5.803','0','0','-0.237792','0.971316','7200','255','1','','23420');
 

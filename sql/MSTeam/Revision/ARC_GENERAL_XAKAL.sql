@@ -54,8 +54,8 @@ INSERT INTO `spell_areatrigger` (`SpellMiscId`, `AreaTriggerId`, `MoveCurveId`, 
 DELETE FROM `instance_template` WHERE `map` = 1516;
 INSERT INTO `instance_template` (`map`, `parent`, `script`, `allowMount`) VALUES (1516, 0, 'instance_the_arcway', 0);
 
-DELETE FROM `creature_text` WHERE `entry` = @XAKAL;
-INSERT INTO `creature_text`(`entry`, `groupid`, `id`, `text`, `type`, `probability`, `sound`, `comment`) VALUES
+DELETE FROM `creature_text` WHERE `CreatureID` = @XAKAL;
+INSERT INTO `creature_text`(`CreatureID`, `GroupID`, `ID`, `Text`, `Type`, `Probability`, `Sound`, `comment`) VALUES
 (@XAKAL, '0', '0', 'Form up, maggots! Secure the breach until we receive orders from Gul\'dan!', '14', '100', '58644', 'XAKAL - INTRO'),
 (@XAKAL, '1', '0', 'Good! Some entertainment! I was getting restless!', '14', '100', '58645', 'XAKAL - AGGRO'),
 (@XAKAL, '2', '0', 'All who rise against the Legion are doomed!', '14', '100', '58646', 'XAKAL - FEL_FISSURE'),

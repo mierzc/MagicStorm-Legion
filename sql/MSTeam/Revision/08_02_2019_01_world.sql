@@ -11,8 +11,8 @@ INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type
 (@ENTRY,0,7,8,40,0,100,0,5,0,0,0,1,2,7000,0,0,0,0,1,0,0,0,0,0,0,0,"Elder Aldryth 88797 - On Waypoint 5 Reached - Say Line 2"),
 (@ENTRY,0,8,9,40,0,100,0,5,0,0,0,41,0,0,0,0,0,0,1,0,0,0,0,0,0,0,"Elder Aldryth 88797 - On Waypoint 5 Reached - Despawn Instant");
 
-— Elder Aldryth 88797 Waypoint
-DELETE FROM `waypoints` WHERE `entry`=8879700;
+-- Elder Aldryth 88797 Waypoint
+DELETE FROM `waypoints` WHERE `entry`=88797;
 INSERT INTO `waypoints`(`entry`,`pointid`,`position_x`,`position_y`,`position_z`,`point_comment`) VALUES
 (8879700,1,200.659485,6423.083008,-22.386225,'Elder Aldryth waypoint 1'),
 (8879700,2,194.590363,6422.728516,-22.840078,'Elder Aldryth waypoint 2'),
@@ -20,7 +20,7 @@ INSERT INTO `waypoints`(`entry`,`pointid`,`position_x`,`position_y`,`position_z`
 (8879700,4,196.034836,6428.789551,-1.582636,'Elder Aldryth waypoint 4'),
 (8879700,5,196.211792,6456.946777,-1.532654,'Elder Aldryth waypoint 5');
 
-— Elder Aldryth 88797
+-- Elder Aldryth 88797
 DELETE FROM `creature_text` WHERE `creatureid`=88797;
 INSERT INTO `creature_text` (`creatureid`,`groupid`,`id`,`text`,`type`,`language`,`probability`,`emote`,`duration`,`sound`,`broadcastTextId`,`textRange`,`comment`) VALUES
 (88797,0,0,'Gracias, extraño.',12,0,100,0,0,0,0,0,'Elder Aldryth'),

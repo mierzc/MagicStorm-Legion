@@ -385,7 +385,7 @@ UPDATE `quest_details` SET `VerifiedBuild`=27326 WHERE `ID`=47224; -- -Unknown-
 UPDATE `quest_details` SET `VerifiedBuild`=27326 WHERE `ID`=47223; -- -Unknown-
 
 DELETE FROM `creature` WHERE `guid` BETWEEN @CGUID+0 AND @CGUID+39;
-INSERT INTO `creature` (`guid`, `id`, `map`, `zoneId`, `areaId`, `spawnMask`, `PhaseId`, `PhaseGroup`, `modelid`, `equipment_id`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecs`, `spawndist`, `currentwaypoint`, `curhealth`, `curmana`, `MovementType`, `npcflag`, `unit_flags`, `dynamicflags`, `VerifiedBuild`) VALUES
+INSERT INTO `creature` (`guid`, `id`, `map`, `zoneId`, `areaId`, `spawnDifficulties`, `PhaseId`, `PhaseGroup`, `modelid`, `equipment_id`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecs`, `spawndist`, `currentwaypoint`, `curhealth`, `curmana`, `MovementType`, `npcflag`, `unit_flags`, `dynamicflags`, `VerifiedBuild`) VALUES
 (@CGUID+0, 122066, 1750, 8840, 8840, 1, '8654', 0, 0, 0, -4291.622, -11380.57, 11.48157, 5.83791, 7200, 0, 0, 0, 0, 0, 0, 0, 0, 27326), -- 艾萨斯·夺日者 (Area: -Unknown- - Difficulty: 0)
 (@CGUID+1, 122065, 1750, 8840, 8840, 1, '8654', 0, 0, 0, -4289.878, -11378.42, 11.33987, 5.531501, 7200, 0, 0, 0, 0, 0, 0, 0, 0, 27326), -- 女伯爵莉亚德琳 (Area: -Unknown- - Difficulty: 0)
 (@CGUID+2, 121756, 1750, 8840, 8840, 1, '8654', 0, 0, 0, -4289.003, -11370.29, 10.80776, 5.400383, 7200, 0, 0, 0, 0, 0, 0, 0, 0, 27326), -- 守备官波鲁斯 (Area: -Unknown- - Difficulty: 0)
@@ -476,7 +476,7 @@ INSERT INTO `creature_addon` (`guid`, `path_id`, `mount`, `bytes1`, `bytes2`, `e
 
 SET @CGUID = 443493;
 DELETE FROM `creature` WHERE `guid` BETWEEN @CGUID+0 AND @CGUID+11;
-INSERT INTO `creature` (`guid`, `id`, `map`, `zoneId`, `areaId`, `spawnMask`, `PhaseId`, `PhaseGroup`, `modelid`, `equipment_id`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecs`, `spawndist`, `currentwaypoint`, `curhealth`, `curmana`, `MovementType`, `npcflag`, `unit_flags`, `dynamicflags`, `VerifiedBuild`) VALUES
+INSERT INTO `creature` (`guid`, `id`, `map`, `zoneId`, `areaId`, `spawnDifficulties`, `PhaseId`, `PhaseGroup`, `modelid`, `equipment_id`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecs`, `spawndist`, `currentwaypoint`, `curhealth`, `curmana`, `MovementType`, `npcflag`, `unit_flags`, `dynamicflags`, `VerifiedBuild`) VALUES
 (@CGUID+0, 122065, 1, 14, 4982, 1, '11695', 0, 0, 0, 1382.197, -5044.78, 2.920438, 4.236743, 120, 0, 0, 0, 0, 0, 0, 0, 0, 27326), -- 女伯爵莉亚德琳 (Area: -Unknown- - Difficulty: 0)
 (@CGUID+1, 40891, 1, 14, 4982, 1, '11695', 0, 0, 0, 1390.208, -4919.457, 11.42539, 3.205439, 120, 0, 0, 0, 0, 0, 0, 0, 0, 27326), -- -Unknown- (Area: -Unknown- - Difficulty: 0)
 (@CGUID+2, 49837, 1, 14, 4982, 1, '11695', 0, 0, 0, 1370.925, -4961.067, 2.143142, 3.741962, 120, 0, 0, 0, 0, 0, 0, 0, 0, 27326), -- -Unknown- (Area: -Unknown- - Difficulty: 0)
@@ -507,7 +507,7 @@ INSERT INTO `creature_addon` (`guid`, `path_id`, `mount`, `bytes1`, `bytes2`, `e
 
 SET @OGUID = 101434;
 DELETE FROM `gameobject` WHERE `guid` BETWEEN @OGUID+0 AND @OGUID+7;
-INSERT INTO `gameobject` (`guid`, `id`, `map`, `zoneId`, `areaId`, `spawnMask`, `PhaseId`, `PhaseGroup`, `position_x`, `position_y`, `position_z`, `orientation`, `rotation0`, `rotation1`, `rotation2`, `rotation3`, `spawntimesecs`, `animprogress`, `state`, `VerifiedBuild`) VALUES
+INSERT INTO `gameobject` (`guid`, `id`, `map`, `zoneId`, `areaId`, `spawnDifficulties`, `PhaseId`, `PhaseGroup`, `position_x`, `position_y`, `position_z`, `orientation`, `rotation0`, `rotation1`, `rotation2`, `rotation3`, `spawntimesecs`, `animprogress`, `state`, `VerifiedBuild`) VALUES
 (@OGUID+0, 293961, 1, 14, 4982, 1, '0', 0, 1363.781, -4746.018, 28.09028, 3.360452, 0, 0, -0.9940186, 0.1092114, 120, 255, 1, 27326), -- 长椅 (Area: -Unknown- - Difficulty: 0)
 (@OGUID+1, 293961, 1, 14, 4982, 1, '0', 0, 1355.446, -4737.952, 28.08782, 3.360452, 0, 0, -0.9940186, 0.1092114, 120, 255, 1, 27326), -- 长椅 (Area: -Unknown- - Difficulty: 0)
 (@OGUID+2, 293961, 1, 14, 4982, 1, '0', 0, 1360.778, -4746.58, 28.08139, 3.360452, 0, 0, -0.9940186, 0.1092114, 120, 255, 1, 27326), -- 长椅 (Area: -Unknown- - Difficulty: 0)
@@ -1640,4 +1640,3 @@ INSERT INTO `creature_text` (`CreatureID`, `GroupID`, `ID`, `Text`, `Type`, `Lan
 (121756, @GROUP_ID+1, @ID+0, 'Пророк Вилен рад, что вы откликнулись на его призыв.ОН с нетерпением ждал этого дня.。', 12, 0, 100, 0, 0, 87999, 133222, ''),
 (122065, @GROUP_ID+1, @ID+0, 'Вместе мы станем свидетелями того, как Легион движется к концу。', 12, 0, 100, 0, 0, 0, 133220, ''),
 (122065, @GROUP_ID+0, @ID+0, 'Легион слишком долго бушует в Азероте.Пора положить этому конец.', 12, 0, 100, 0, 0, 87183, 133221, '');
-

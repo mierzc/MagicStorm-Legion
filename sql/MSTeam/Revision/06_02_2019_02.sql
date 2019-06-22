@@ -51,7 +51,7 @@ UPDATE `creature_questitem` SET `CreatureEntry`='102672', `Idx`='1', `ItemId`='1
 
 UPDATE `creature_loot_template` SET `Entry`='102672', `Item`='140654', `Reference`='0', `Chance`='2.14035', `QuestRequired`='1', `LootMode`='1', `GroupId`='0', `MinCount`='1', `MaxCount`='1', `Comment`='' WHERE (`Entry`='102672') AND (`Item`='140654');
 
-UPDATE creature_template SET skinloot = 107803 WHERE entry = 107803 AND skinloot = 0;
+UPDATE `creature_template` SET `skinloot` = 107803 WHERE `entry` = 107803 AND `skinloot` = 0;
 DELETE FROM `skinning_loot_template` WHERE `entry` = '107803';
 INSERT INTO `skinning_loot_template` (`entry`, `Item`, `Reference`, `Chance`, `QuestRequired`, `LootMode`, `GroupId`, `MinCount`, `MaxCount`, `Comment`) VALUES
 ('107803', '124113', '0', '99', '0', '1', '0', '1', '2', ''),
@@ -64,7 +64,7 @@ INSERT INTO `skinning_loot_template` (`entry`, `Item`, `Reference`, `Chance`, `Q
 ('107803', '140856', '0', '14.19752', '0', '1', '0', '1', '1', '');
 
 
-UPDATE creature_template SET skinloot = 107805 WHERE entry = 107805 AND skinloot = 0;
+UPDATE `creature_template` SET `skinloot` = 107805 WHERE `entry` = 107805 AND `skinloot` = 0;
 DELETE FROM `skinning_loot_template` WHERE `entry` = '107805';
 INSERT INTO `skinning_loot_template` (`entry`, `Item`, `Reference`, `Chance`, `QuestRequired`, `LootMode`, `GroupId`, `MinCount`, `MaxCount`, `Comment`) VALUES
 ('107805', '124113', '0', '100', '0', '1', '0', '1', '2', ''),
@@ -78,7 +78,7 @@ INSERT INTO `skinning_loot_template` (`entry`, `Item`, `Reference`, `Chance`, `Q
 
 
 
-UPDATE creature_template SET skinloot = 107852 WHERE entry = 107852 AND skinloot = 0;
+UPDATE `creature_template` SET `skinloot` = 107852 WHERE `entry` = 107852 AND `skinloot` = 0;
 DELETE FROM `skinning_loot_template` WHERE `entry` = '107852';
 INSERT INTO `skinning_loot_template` (`entry`, `Item`, `Reference`, `Chance`, `QuestRequired`, `LootMode`, `GroupId`, `MinCount`, `MaxCount`, `Comment`) VALUES
 ('107852', '124113', '0', '99.87218', '0', '1', '0', '1', '2', ''),
@@ -89,7 +89,7 @@ INSERT INTO `skinning_loot_template` (`entry`, `Item`, `Reference`, `Chance`, `Q
 ('107852', '140856', '0', '1', '0', '1', '0', '1', '1', '');
 
 
-UPDATE creature_template SET skinloot = 108538 WHERE entry = 108538 AND skinloot = 0;
+UPDATE `creature_template` SET `skinloot` = 108538 WHERE `entry` = 108538 AND `skinloot` = 0;
 DELETE FROM `skinning_loot_template` WHERE `entry` = '108538';
 INSERT INTO `skinning_loot_template` (`entry`, `Item`, `Reference`, `Chance`, `QuestRequired`, `LootMode`, `GroupId`, `MinCount`, `MaxCount`, `Comment`) VALUES
 ('108538', '124113', '0', '99.72981', '0', '1', '0', '1', '2', ''),
@@ -1733,4 +1733,3 @@ insert into `spell_loot_template` (`Entry`, `Item`, `Reference`, `Chance`, `Ques
 ('263154','151798','0','0.006','0','1','1','1','1',NULL),
 ('263154','151799','0','0.01','0','1','1','1','1',NULL),
 ('263154','151805','0','0.01','0','1','1','1','1',NULL);
-

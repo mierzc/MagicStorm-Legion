@@ -1666,7 +1666,7 @@ INSERT INTO `creature_text` (`CreatureID`, `GroupID`, `ID`, `Text`, `Type`, `Lan
 
 -- Manor Mistmantle Spell Focus (204811)
 DELETE FROM `gameobject` WHERE `guid`=62231;
-INSERT INTO `gameobject` (`guid`, `id`, `map`, `zoneId`, `areaId`, `spawnMask`, `PhaseId`, `PhaseGroup`, `position_x`, `position_y`, `position_z`, `orientation`, `rotation0`, `rotation1`, `rotation2`, `rotation3`, `spawntimesecs`, `animprogress`, `state`, `ScriptName`, `VerifiedBuild`) VALUES
+INSERT INTO `gameobject` (`guid`, `id`, `map`, `zoneId`, `areaId`, `spawnDifficulties`, `PhaseId`, `PhaseGroup`, `position_x`, `position_y`, `position_z`, `orientation`, `rotation0`, `rotation1`, `rotation2`, `rotation3`, `spawntimesecs`, `animprogress`, `state`, `ScriptName`, `VerifiedBuild`) VALUES
 (62231, 204811, 0, 0, 0, 1, 0, 0, -10368.2, -1256.43, 35.9093, 1.61341, -0, -0, -0.72201, -0.691882, 180, 255, 1, '', 0);
 
 
@@ -1742,4 +1742,3 @@ DELETE FROM `creature_questender` WHERE  `id`=620 AND `quest`=13840;
 DELETE FROM `creature_questender` WHERE  `id`=270 AND `quest`=377;
 DELETE FROM `creature_questender` WHERE  `id`=5464 AND `quest`=1477;
 DELETE FROM `smart_scripts` WHERE  `entryorguid`=315;
-

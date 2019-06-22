@@ -1,4 +1,4 @@
-﻿INSERT IGNORE INTO graveyard_zone (ID, GhostZone) VALUES
+INSERT IGNORE INTO `graveyard_zone` (`ID`, `GhostZone`) VALUES
 (6021, 8574), -- Krokuun
 (6101, 8574), -- Krokuun
 (6102, 8899), -- Etendues Antoréennes
@@ -33,7 +33,7 @@ SET @ENTRY := 55399;
 SET @SOURCETYPE := 0;
 
 DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=@SOURCETYPE;
-UPDATE creature_template SET AIName="SmartAI" WHERE entry=@ENTRY LIMIT 1;
+UPDATE `creature_template` SET `AIName`="SmartAI" WHERE `entry`=@ENTRY LIMIT 1;
 INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES 
 (@ENTRY,@SOURCETYPE,0,0,1,0,100,0,8000,8000,20000,25000,11,34359,0,0,0,0,0,1,0,0,0,0.0,0.0,0.0,0.0,"OOC - Drink Potion");
 
@@ -42,7 +42,7 @@ SET @ENTRY := 55231;
 SET @SOURCETYPE := 0;
 
 DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=@SOURCETYPE;
-UPDATE creature_template SET AIName="SmartAI" WHERE entry=@ENTRY LIMIT 1;
+UPDATE `creature_template` SET `AIName`="SmartAI" WHERE `entry`=@ENTRY LIMIT 1;
 INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES 
 (@ENTRY,@SOURCETYPE,0,0,1,0,100,0,8000,8000,20000,25000,11,34359,0,0,0,0,0,1,0,0,0,0.0,0.0,0.0,0.0,"OOC - Drink Potion");
 
@@ -58,7 +58,7 @@ SET @ENTRY := 57850;
 SET @SOURCETYPE := 0;
 
 DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=@SOURCETYPE;
-UPDATE creature_template SET AIName="SmartAI" WHERE entry=@ENTRY LIMIT 1;
+UPDATE `creature_template` SET `AIName`="SmartAI" WHERE `entry`=@ENTRY LIMIT 1;
 INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES 
 (@ENTRY,@SOURCETYPE,0,0,62,0,100,0,13352,0,0,0,11,109244,2,0,0,0,0,7,0,0,0,0.0,0.0,0.0,0.0,"On Gossip Select - Cast Teleport to the Cannon"),
 (@ENTRY,@SOURCETYPE,1,0,62,0,100,0,13352,7,0,0,72,0,0,0,0,0,0,7,0,0,0,0.0,0.0,0.0,0.0,"On Gossip Select - Close Gossip"); 
@@ -77,7 +77,7 @@ SET @ENTRY := 14841;
 SET @SOURCETYPE := 0;
 
 DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=@SOURCETYPE;
-UPDATE creature_template SET AIName="SmartAI" WHERE entry=@ENTRY LIMIT 1;
+UPDATE `creature_template` SET `AIName`="SmartAI" WHERE `entry`=@ENTRY LIMIT 1;
 INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES 
 (@ENTRY,@SOURCETYPE,0,0,1,0,100,0,30000,60000,60000,120000,1,0,0,0,0,0,0,1,0,0,0,0.0,0.0,0.0,0.0,"OOC - Talk 0"),
 (@ENTRY,@SOURCETYPE,1,0,62,0,100,0,6226,0,0,0,72,0,0,0,0,0,0,7,0,0,0,0.0,0.0,0.0,0.0,"On Gossip Select - Close Gossip"),
@@ -96,7 +96,7 @@ SET @ENTRY := 56035;
 SET @SOURCETYPE := 0;
 
 DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=@SOURCETYPE;
-UPDATE creature_template SET AIName="SmartAI" WHERE entry=@ENTRY LIMIT 1;
+UPDATE `creature_template` SET `AIName`="SmartAI" WHERE `entry`=@ENTRY LIMIT 1;
 INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES 
 (@ENTRY,@SOURCETYPE,0,0,22,0,100,0,34,5,5,0,5,94,0,0,0,0,0,1,0,0,0,0.0,0.0,0.0,0.0,"On Receive Emote - Dance");
 
@@ -116,7 +116,7 @@ SET @ENTRY := 54485;
 SET @SOURCETYPE := 0;
 
 DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=@SOURCETYPE;
-UPDATE creature_template SET AIName="SmartAI" WHERE entry=@ENTRY LIMIT 1;
+UPDATE `creature_template` SET `AIName`="SmartAI" WHERE `entry`=@ENTRY LIMIT 1;
 INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES 
 (@ENTRY,@SOURCETYPE,0,0,1,0,100,0,30000,60000,35000,45000,1,1,0,0,0,0,0,1,0,0,0,0.0,0.0,0.0,0.0,"OOC - Talk 1"),
 (@ENTRY,@SOURCETYPE,1,0,10,0,100,0,1,5,120000,180000,1,0,0,0,0,0,0,7,0,0,0,0.0,0.0,0.0,0.0,"OOC LoS - Talk 0"),
@@ -140,7 +140,7 @@ SET @ENTRY := 54605;
 SET @SOURCETYPE := 0;
 
 DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=@SOURCETYPE;
-UPDATE creature_template SET AIName="SmartAI" WHERE entry=@ENTRY LIMIT 1;
+UPDATE `creature_template` SET `AIName`="SmartAI" WHERE `entry`=@ENTRY LIMIT 1;
 INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES 
 (@ENTRY,@SOURCETYPE,0,0,1,0,100,0,35000,60000,45000,60000,1,1,0,0,0,0,0,1,0,0,0,0.0,0.0,0.0,0.0,"OOC - Talk 1"),
 (@ENTRY,@SOURCETYPE,1,0,10,0,100,0,1,5,60000,180000,1,0,0,0,0,0,0,7,0,0,0,0.0,0.0,0.0,0.0,"OOC LoS - Talk 0"),
@@ -154,7 +154,7 @@ SET @ENTRY := 54643;
 SET @SOURCETYPE := 0;
 
 DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=@SOURCETYPE;
-UPDATE creature_template SET AIName="SmartAI" WHERE entry=@ENTRY LIMIT 1;
+UPDATE `creature_template` SET `AIName`="SmartAI" WHERE `entry`=@ENTRY LIMIT 1;
 INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES 
 (@ENTRY,@SOURCETYPE,0,0,1,0,100,0,1000,5000,10000,15000,11,102209,0,0,0,0,0,1,0,0,0,0.0,0.0,0.0,0.0,"OOC - Cast Bombs Away");
 
@@ -173,7 +173,7 @@ SET @ENTRY := 33081;
 SET @SOURCETYPE := 0;
 
 DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=@SOURCETYPE;
-UPDATE creature_template SET AIName="SmartAI" WHERE entry=@ENTRY LIMIT 1;
+UPDATE `creature_template` SET `AIName`="SmartAI" WHERE `entry`=@ENTRY LIMIT 1;
 INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES 
 (@ENTRY,@SOURCETYPE,0,0,1,0,100,0,30000,60000,30000,60000,0,1,0,0,0,0,0,1,0,0,0,0.0,0.0,0.0,0.0,"OOC - Despawn"),
 (@ENTRY,@SOURCETYPE,1,2,6,0,100,0,0,0,0,0,85,62265,0,0,0,0,0,7,0,0,0,0.0,0.0,0.0,0.0,"On Death - Cast Credit"),
@@ -190,7 +190,7 @@ SET @ENTRY := 54642;
 SET @SOURCETYPE := 0;
 
 DELETE FROM `smart_scripts` WHERE `entryorguid`=@ENTRY AND `source_type`=@SOURCETYPE;
-UPDATE creature_template SET AIName="SmartAI" WHERE entry=@ENTRY LIMIT 1;
+UPDATE `creature_template` SET `AIName`="SmartAI" WHERE `entry`=@ENTRY LIMIT 1;
 INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES 
 (@ENTRY,@SOURCETYPE,0,0,1,0,100,0,5000,5000,12500,24000,11,102341,0,0,0,0,0,11,54588,6,0,0.0,0.0,0.0,0.0,"OOC - Cast Marked");
 
@@ -203,17 +203,17 @@ DELETE FROM `game_event` WHERE `eventEntry`=71;
 REPLACE INTO `game_event` (`eventEntry`, `start_time`, `end_time`, `occurence`, `length`, `holiday`, `description`, `world_event`, `announce`) VALUES
 (71, '2013-01-06 01:01:00', '2030-12-31 06:00:00', 131040, 8639, 0, 'Darkmoon Faire Building (Mulgore)', 0, 2);
 
-DELETE FROM `creature` WHERE `id` IN(106914,106915);
-INSERT INTO creature
-  (guid, id, map, zoneId, areaId, spawnDifficulties, phaseUseFlags, PhaseId, PhaseGroup, terrainSwapMap, modelid, equipment_id, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, currentwaypoint, curhealth, curmana, MovementType, npcflag, unit_flags, unit_flags2, unit_flags3, dynamicflags, ScriptName, VerifiedBuild)
+DELETE FROM `creature` WHERE `id` IN(106914,106915,98675);
+INSERT INTO `creature`
+  (`guid`, `id`,`map`, `zoneId`, `areaId`, `spawnDifficulties`, `phaseUseFlags`, `PhaseId`, `PhaseGroup`, `terrainSwapMap`, `modelid`, `equipment_id`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecs`, `spawndist`, `currentwaypoint`, `curhealth`, `curmana`, `MovementType`, `npcflag`, `unit_flags`, `unit_flags2`, `unit_flags3`, `dynamicflags`, `ScriptName`, `VerifiedBuild`)
 VALUES
   ("280000709", 106915, 1220, 0, 0, "0", 0, 0, 0, -1, 0, 1, 458.172, 6506.74, 40.2502, 0.652985, 300, 0, 0, 3135285, 0, 0, "0", 0, 0, 0, 0, "", 0),
   ("280000708", 106914, 1220, 0, 0, "0", 0, 0, 0, -1, 0, 0, 454.286, 6510.71, 40.2581, 0.433824, 300, 0, 0, 2186175, 25282, 0, "0", 0, 0, 0, 0, "", 0),
   ("280000712", 98675, 1220, 0, 0, "0", 0, 0, 0, -1, 0, 0, 490.265, 5613.3, 66.0642, 2.38586, 300, 0, 0, 1039267, 1, 0, "0", 0, 0, 0, 0, "", 0);
   
  DELETE FROM `creature_queststarter` WHERE `id` = 89278;
-INSERT INTO creature_queststarter
-  (id, quest)
+INSERT INTO `creature_queststarter`
+  (`id`, `quest`)
 VALUES
   (89278, 37449);
     
@@ -222,8 +222,8 @@ UPDATE `gameobject_template` SET `Data1` = 238940 WHERE `entry` = 238940;
 UPDATE `gameobject_template` SET `Data1` = 239745 WHERE `entry` = 239745;
 
 DELETE FROM `gameobject_loot_template` WHERE `Entry` IN(238940,239744,239745);
-INSERT INTO gameobject_loot_template
-  (Entry, Item, Reference, Chance, QuestRequired, LootMode, GroupId, MinCount, MaxCount, Comment)
+INSERT INTO `gameobject_loot_template`
+  (`Entry`, `Item`, `Reference`, `Chance`, `QuestRequired`, `LootMode`, `GroupId`, `MinCount`, `MaxCount`, Comment)
 VALUES
   (238940, 120946, 0, 100, 1, 1, 0, 1, 1, "NULL"),
   (239744, 120947, 0, 100, 1, 1, 0, 1, 1, "NULL"),
@@ -237,10 +237,10 @@ INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type
 (@ENTRY,0,0,0,62,0,100,0,86563,1,0,0,62,1220,0,0,0,0,0,7,0,0,0,-102.297,6966.86,12.5079,4.93751,""),
 (@ENTRY,0,1,0,62,0,100,0,86563,1,0,0,33,103607,0,0,0,0,0,7,0,0,0,0,0,0,0,"quest 41220 completed");
 
-UPDATE creature_template SET lootid = 101967 WHERE entry = 101967 AND lootid = 0;
-UPDATE creature_template SET lootid = 102166 WHERE entry = 102166 AND lootid = 0;
-UPDATE creature_template SET lootid = 102088 WHERE entry = 102088 AND lootid = 0;
-UPDATE creature_template SET lootid = 102622 WHERE entry = 102622 AND lootid = 0;
+UPDATE `creature_template` SET `lootid` = 101967 WHERE `entry` = 101967 AND `lootid` = 0;
+UPDATE `creature_template` SET `lootid` = 102166 WHERE `entry` = 102166 AND `lootid` = 0;
+UPDATE `creature_template` SET `lootid` = 102088 WHERE `entry` = 102088 AND `lootid` = 0;
+UPDATE `creature_template` SET `lootid` = 102622 WHERE `entry` = 102622 AND `lootid` = 0;
 
 
 
@@ -784,8 +784,8 @@ DELETE FROM `npc_text` WHERE `id` IN (35015);
 INSERT INTO `npc_text` (`ID`, `Probability0`, `Probability1`, `Probability2`, `Probability3`, `Probability4`, `Probability5`, `Probability6`, `Probability7`, `BroadcastTextId0`, `BroadcastTextId1`, `BroadcastTextId2`, `BroadcastTextId3`, `BroadcastTextId4`, `BroadcastTextId5`, `BroadcastTextId6`, `BroadcastTextId7`, `VerifiedBuild`) VALUES
 (35015, 1, 0, 0, 0, 0, 0, 0, 0, 103923, 0, 0, 0, 0, 0, 0, 0, 25996);
 
-DELETE FROM gossip_menu_option WHERE `MenuId` IN (30015);
-INSERT INTO gossip_menu_option (`MenuId`, `OptionIndex`, `OptionIcon`, `OptionText`, `OptionBroadcastTextId`, `OptionType`, `OptionNpcFlag`, `VerifiedBuild`) VALUES
+DELETE FROM `gossip_menu_option` WHERE `MenuId` IN (30015);
+INSERT INTO `gossip_menu_option` (`MenuId`, `OptionIndex`, `OptionIcon`, `OptionText`, `OptionBroadcastTextId`, `OptionType`, `OptionNpcFlag`, `VerifiedBuild`) VALUES
 ('30015', '1', '0', 'I''m going to crate you up now, Jabrul.', '103924', '1', '1', '0');
 
 -- Crate at Azsuna
@@ -804,8 +804,8 @@ DELETE FROM `npc_text` WHERE `id` IN (35016);
 INSERT INTO `npc_text` (`ID`, `Probability0`, `Probability1`, `Probability2`, `Probability3`, `Probability4`, `Probability5`, `Probability6`, `Probability7`, `BroadcastTextId0`, `BroadcastTextId1`, `BroadcastTextId2`, `BroadcastTextId3`, `BroadcastTextId4`, `BroadcastTextId5`, `BroadcastTextId6`, `BroadcastTextId7`, `VerifiedBuild`) VALUES
 (35016, 1, 0, 0, 0, 0, 0, 0, 0, 103930, 0, 0, 0, 0, 0, 0, 0, 25996);
 
-DELETE FROM gossip_menu_option WHERE `MenuId` IN (30016);
-INSERT INTO gossip_menu_option (`MenuId`, `OptionIndex`, `OptionIcon`, `OptionText`, `OptionBroadcastTextId`, `OptionType`, `OptionNpcFlag`, `VerifiedBuild`) VALUES
+DELETE FROM `gossip_menu_option` WHERE `MenuId` IN (30016);
+INSERT INTO `gossip_menu_option` (`MenuId`, `OptionIndex`, `OptionIcon`, `OptionText`, `OptionBroadcastTextId`, `OptionType`, `OptionNpcFlag`, `VerifiedBuild`) VALUES
 ('30016', '1', '0', 'Mail Jabrul.', '103931', '1', '1', '0');
 
 -- Crate at Dalaran 
@@ -826,8 +826,8 @@ DELETE FROM `npc_text` WHERE `id` IN (35017);
 INSERT INTO `npc_text` (`ID`, `Probability0`, `Probability1`, `Probability2`, `Probability3`, `Probability4`, `Probability5`, `Probability6`, `Probability7`, `BroadcastTextId0`, `BroadcastTextId1`, `BroadcastTextId2`, `BroadcastTextId3`, `BroadcastTextId4`, `BroadcastTextId5`, `BroadcastTextId6`, `BroadcastTextId7`, `VerifiedBuild`) VALUES
 (35017, 1, 0, 0, 0, 0, 0, 0, 0, 103934, 0, 0, 0, 0, 0, 0, 0, 25996);
 
-DELETE FROM gossip_menu_option WHERE `MenuId` IN (30017);
-INSERT INTO gossip_menu_option (`MenuId`, `OptionIndex`, `OptionIcon`, `OptionText`, `OptionBroadcastTextId`, `OptionType`, `OptionNpcFlag`, `VerifiedBuild`) VALUES
+DELETE FROM `gossip_menu_option` WHERE `MenuId` IN (30017);
+INSERT INTO `gossip_menu_option` (`MenuId`, `OptionIndex`, `OptionIcon`, `OptionText`, `OptionBroadcastTextId`, `OptionType`, `OptionNpcFlag`, `VerifiedBuild`) VALUES
 ('30017', '1', '0', 'Break open the crate', '103935', '1', '1', '0');
 
 -- Jabrul mini event 101119
@@ -906,8 +906,8 @@ INSERT INTO `conditions` (`SourceTypeOrReferenceId`, `SourceGroup`, `SourceEntry
 ('26', '5210', '7596', '47', '40547', '64', '1', 'Phase 5210 if quest 40547'),
 ('26', '5210', '7596', '9', '40547', '0', '0', 'Phase 5210 if quest 40547');
 
-DELETE FROM gossip_menu_option WHERE `MenuId` IN (19093, 18501, 20537, 19081, 19092, 19094, 19103) OR MenuId BETWEEN 30000 AND 30100;
-INSERT INTO gossip_menu_option (`MenuId`, `OptionIndex`, `OptionIcon`, `OptionText`, `OptionBroadcastTextId`, `OptionType`, `OptionNpcFlag`, `VerifiedBuild`) VALUES
+DELETE FROM `gossip_menu_option` WHERE `MenuId` IN (19093, 18501, 20537, 19081, 19092, 19094, 19103) OR `MenuId` BETWEEN 30000 AND 30100;
+INSERT INTO `gossip_menu_option` (`MenuId`, `OptionIndex`, `OptionIcon`, `OptionText`, `OptionBroadcastTextId`, `OptionType`, `OptionNpcFlag`, `VerifiedBuild`) VALUES
 ('18501', '0', '1', 'Something very expensive, please.', '95701', '3', '128', '0'),
 ('18501', '1', '0', 'I''m looking for some diamonds, Tiffany, do you have any?', '103334', '1', '1', '0'),
 --
@@ -1102,40 +1102,40 @@ INSERT INTO `gameobject_template` (`entry`, `type`, `displayId`, `name`, `IconNa
 ('246228', '3', '30581', 'Floating Plank', 'questinteract', 'Gathering', '', '1', '93', '246228', '0', '0', '0', '0', '0', '0', '40547', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '', '', '0'),
 ('246267', '3', '3651', 'Jade Plume', 'questinteract', 'Gathering', '', '1', '93', '246267', '0', '0', '0', '0', '0', '0', '40558', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '', '', '0');
 
-UPDATE conditions SET ConditionTarget = 1 WHERE SourceTypeOrReferenceId = 17 AND SourceEntry = 52781;
+UPDATE `conditions` SET `ConditionTarget` = 1 WHERE `SourceTypeOrReferenceId` = 17 AND `SourceEntry` = 52781;
 
-DELETE FROM creature_loot_template WHERE entry = 3276 and item = 5064;
-INSERT INTO creature_loot_template (entry, item, Chance, QuestRequired, MinCount,
-MaxCount) VALUES
+DELETE FROM `creature_loot_template` WHERE `Entry` = 3276 and `Item` = 5064;
+INSERT INTO `creature_loot_template` (`Entry`, `Item`, `Chance`, `QuestRequired`, `MinCount`,
+`MaxCount`) VALUES
 (3276, 5064, 96, 1, 1, 1);
 
-DELETE FROM creature_loot_template WHERE entry = 3277 and item = 5064;
-INSERT INTO creature_loot_template (entry, item, Chance, QuestRequired, MinCount,
-MaxCount) VALUES
+DELETE FROM `creature_loot_template` WHERE `Entry` = 3277 and `Item` = 5064;
+INSERT INTO `creature_loot_template` (`Entry`, `Item`, `Chance`, `QuestRequired`, `MinCount`,
+`MaxCount`) VALUES
 (3277, 5064, 96, 1, 1, 1);
 
-DELETE FROM creature_loot_template WHERE entry = 3280 and item = 5064;
-INSERT INTO creature_loot_template (entry, item, Chance, QuestRequired, MinCount,
-MaxCount) VALUES
+DELETE FROM `creature_loot_template` WHERE `Entry` = 3280 and `Item` = 5064;
+INSERT INTO `creature_loot_template` (`Entry`, `Item`, `Chance`, `QuestRequired`, `MinCount`,
+`MaxCount`) VALUES
 (3280, 5064, 96, 1, 1, 1);
 
-DELETE FROM creature_loot_template WHERE entry = 3278 and item = 5064;
-INSERT INTO creature_loot_template (entry, item, Chance, QuestRequired, MinCount,
-MaxCount) VALUES
+DELETE FROM `creature_loot_template` WHERE `Entry` = 3278 and `Item` = 5064;
+INSERT INTO `creature_loot_template` (`Entry`, `Item`, `Chance`, `QuestRequired`, `MinCount`,
+`MaxCount`) VALUES
 (3278, 5064, 96, 1, 1, 1);
 
-DELETE FROM creature_loot_template WHERE entry = 3279 and item = 5064;
-INSERT INTO creature_loot_template (entry, item, Chance, QuestRequired, MinCount,
-MaxCount) VALUES
+DELETE FROM `creature_loot_template` WHERE `Entry` = 3279 and `Item` = 5064;
+INSERT INTO `creature_loot_template` (`Entry`, `Item`, `Chance`, `QuestRequired`, `MinCount`,
+`MaxCount`) VALUES
 (3279, 5064, 96, 1, 1, 1);
 
-DELETE FROM creature_loot_template WHERE entry = 3452 and item = 5064;
-INSERT INTO creature_loot_template (entry, item, Chance, QuestRequired, MinCount,
-MaxCount) VALUES
+DELETE FROM `creature_loot_template` WHERE `Entry` = 3452 and `Item` = 5064;
+INSERT INTO `creature_loot_template` (`Entry`, `Item`, `Chance`, `QuestRequired`, `MinCount`,
+`MaxCount`) VALUES
 (3452, 5064, 96, 1, 1, 1);
 
-DELETE FROM `achievement_reward` WHERE `entry` IN (10018,10092,10093,10094,10095,10149,10412,10997,10998,11003,11004,11005,11008,11009,11010,11163,11176,11180,11233,11320,11427,11563,11564,11765,11856,11869,11987,12031,12032,12078,12079,12100,12103,12136,12137,12199,12200,12431,2138,3636,4845,4853,5449,5828,6169,6375,6582,6927,6932,7499,7521,7928,7929,7934,8124,8293,8300,8348,8398,8399,8454,8484,8485,8641,8642,8898,8985,9069,9236,9238,9252,9394,9396,9429,9454,9462,9463,9468,9477,9478,9487,9495,9496,9523,9526,9539,9550,9565,9673,9685,9696,9705,9761,9764,9785,9792,9799,9805,9811,9817,9824,9838,9885,9894,9983);
-INSERT INTO `achievement_reward` (`entry`, `item`, `sender`, `subject`) VALUES 
+DELETE FROM `achievement_reward` WHERE `ID` IN (10018,10092,10093,10094,10095,10149,10412,10997,10998,11003,11004,11005,11008,11009,11010,11163,11176,11180,11233,11320,11427,11563,11564,11765,11856,11869,11987,12031,12032,12078,12079,12100,12103,12136,12137,12199,12200,12431,2138,3636,4845,4853,5449,5828,6169,6375,6582,6927,6932,7499,7521,7928,7929,7934,8124,8293,8300,8348,8398,8399,8454,8484,8485,8641,8642,8898,8985,9069,9236,9238,9252,9394,9396,9429,9454,9462,9463,9468,9477,9478,9487,9495,9496,9523,9526,9539,9550,9565,9673,9685,9696,9705,9761,9764,9785,9792,9799,9805,9811,9817,9824,9838,9885,9894,9983);
+INSERT INTO `achievement_reward` (`ID`, `ItemID`, `Sender`, `Subject`) VALUES 
 ('10018', '128706', '24380', 'Draenor Pathfinder'),
 ('10092', '103533', '24380', 'Wild Combatant'),
 ('10093', '103533', '24380', 'Wild Combatant'),
@@ -1439,10 +1439,10 @@ UPDATE `gameobject` SET `spawntimesecs`='120' WHERE  `guid`=184414;
 UPDATE `gameobject` SET `VerifiedBuild`='19103' WHERE  `guid`=184508;
 UPDATE `gameobject` SET `VerifiedBuild`='19103' WHERE  `guid`=184414;
 
-UPDATE `gossip_menu` SET VerifiedBuild=22566 WHERE (`MenuId`=83 AND `TextId`=580) OR (`MenuId`=6574 AND `TextId`=7790) OR (`MenuId`=6575 AND `TextId`=7789) OR (`MenuId`=6582 AND `TextId`=7792) OR (`MenuId`=7095 AND `TextId`=8349) OR (`MenuId`=6581 AND `TextId`=7799) OR (`MenuId`=6227 AND `TextId`=7400) OR (`MenuId`=6224 AND `TextId`=7395) OR (`MenuId`=6201 AND `TextId`=7382) OR (`MenuId`=6231 AND `TextId`=7390) OR (`MenuId`=6232 AND `TextId`=7406) OR (`MenuId`=6182 AND `TextId`=7334) OR (`MenuId`=6233 AND `TextId`=7389) OR (`MenuId`=6202 AND `TextId`=7355) OR (`MenuId`=11073 AND `TextId`=15400) OR (`MenuId`=6207 AND `TextId`=7356) OR (`MenuId`=8637 AND `TextId`=10831) OR (`MenuId`=6203 AND `TextId`=7357) OR (`MenuId`=6234 AND `TextId`=7387) OR (`MenuId`=6212 AND `TextId`=7365) OR (`MenuId`=6225 AND `TextId`=7397) OR (`MenuId`=7093 AND `TextId`=8347) OR (`MenuId`=8848 AND `TextId`=11472) OR (`MenuId`=6579 AND `TextId`=7795) OR (`MenuId`=6578 AND `TextId`=7794) OR (`MenuId`=6577 AND `TextId`=7793) OR (`MenuId`=6184 AND `TextId`=7338) OR (`MenuId`=6181 AND `TextId`=7336) OR (`MenuId`=6161 AND `TextId`=7314) OR (`MenuId`=6223 AND `TextId`=7383) OR (`MenuId`=3926 AND `TextId`=4785) OR (`MenuId`=9821 AND `TextId`=13584) OR (`MenuId`=3331 AND `TextId`=4072) OR (`MenuId`=3646 AND `TextId`=4443) OR (`MenuId`=4783 AND `TextId`=5839) OR (`MenuId`=8636 AND `TextId`=10833) OR (`MenuId`=8635 AND `TextId`=10832) OR (`MenuId`=8634 AND `TextId`=10834) OR (`MenuId`=6206 AND `TextId`=7360) OR (`MenuId`=6205 AND `TextId`=7359) OR (`MenuId`=6204 AND `TextId`=7358) OR (`MenuId`=6230 AND `TextId`=7404) OR (`MenuId`=6211 AND `TextId`=7364) OR (`MenuId`=6187 AND `TextId`=7341) OR (`MenuId`=6185 AND `TextId`=7340) OR (`MenuId`=6186 AND `TextId`=7339) OR (`MenuId`=6183 AND `TextId`=7337) OR (`MenuId`=4103 AND `TextId`=5005) OR (`MenuId`=5856 AND `TextId`=7028) OR (`MenuId`=1294 AND `TextId`=822) OR (`MenuId`=23 AND `TextId`=523) OR (`MenuId`=24 AND `TextId`=522) OR (`MenuId`=5854 AND `TextId`=7021) OR (`MenuId`=4185 AND `TextId`=5285) OR (`MenuId`=4006 AND `TextId`=4862) OR (`MenuId`=4021 AND `TextId`=4874) OR (`MenuId`=4012 AND `TextId`=4998);
+UPDATE `gossip_menu` SET `VerifiedBuild`=22566 WHERE (`MenuId`=83 AND `TextId`=580) OR (`MenuId`=6574 AND `TextId`=7790) OR (`MenuId`=6575 AND `TextId`=7789) OR (`MenuId`=6582 AND `TextId`=7792) OR (`MenuId`=7095 AND `TextId`=8349) OR (`MenuId`=6581 AND `TextId`=7799) OR (`MenuId`=6227 AND `TextId`=7400) OR (`MenuId`=6224 AND `TextId`=7395) OR (`MenuId`=6201 AND `TextId`=7382) OR (`MenuId`=6231 AND `TextId`=7390) OR (`MenuId`=6232 AND `TextId`=7406) OR (`MenuId`=6182 AND `TextId`=7334) OR (`MenuId`=6233 AND `TextId`=7389) OR (`MenuId`=6202 AND `TextId`=7355) OR (`MenuId`=11073 AND `TextId`=15400) OR (`MenuId`=6207 AND `TextId`=7356) OR (`MenuId`=8637 AND `TextId`=10831) OR (`MenuId`=6203 AND `TextId`=7357) OR (`MenuId`=6234 AND `TextId`=7387) OR (`MenuId`=6212 AND `TextId`=7365) OR (`MenuId`=6225 AND `TextId`=7397) OR (`MenuId`=7093 AND `TextId`=8347) OR (`MenuId`=8848 AND `TextId`=11472) OR (`MenuId`=6579 AND `TextId`=7795) OR (`MenuId`=6578 AND `TextId`=7794) OR (`MenuId`=6577 AND `TextId`=7793) OR (`MenuId`=6184 AND `TextId`=7338) OR (`MenuId`=6181 AND `TextId`=7336) OR (`MenuId`=6161 AND `TextId`=7314) OR (`MenuId`=6223 AND `TextId`=7383) OR (`MenuId`=3926 AND `TextId`=4785) OR (`MenuId`=9821 AND `TextId`=13584) OR (`MenuId`=3331 AND `TextId`=4072) OR (`MenuId`=3646 AND `TextId`=4443) OR (`MenuId`=4783 AND `TextId`=5839) OR (`MenuId`=8636 AND `TextId`=10833) OR (`MenuId`=8635 AND `TextId`=10832) OR (`MenuId`=8634 AND `TextId`=10834) OR (`MenuId`=6206 AND `TextId`=7360) OR (`MenuId`=6205 AND `TextId`=7359) OR (`MenuId`=6204 AND `TextId`=7358) OR (`MenuId`=6230 AND `TextId`=7404) OR (`MenuId`=6211 AND `TextId`=7364) OR (`MenuId`=6187 AND `TextId`=7341) OR (`MenuId`=6185 AND `TextId`=7340) OR (`MenuId`=6186 AND `TextId`=7339) OR (`MenuId`=6183 AND `TextId`=7337) OR (`MenuId`=4103 AND `TextId`=5005) OR (`MenuId`=5856 AND `TextId`=7028) OR (`MenuId`=1294 AND `TextId`=822) OR (`MenuId`=23 AND `TextId`=523) OR (`MenuId`=24 AND `TextId`=522) OR (`MenuId`=5854 AND `TextId`=7021) OR (`MenuId`=4185 AND `TextId`=5285) OR (`MenuId`=4006 AND `TextId`=4862) OR (`MenuId`=4021 AND `TextId`=4874) OR (`MenuId`=4012 AND `TextId`=4998);
 UPDATE `gossip_menu_option` SET verifiedbuild=27547 WHERE (`MenuId`=83 AND `OptionIndex`=0) OR (`MenuId`=6575 AND `OptionIndex`=0) OR (`MenuId`=6582 AND `OptionIndex`=3) OR (`MenuId`=6582 AND `OptionIndex`=2) OR (`MenuId`=6582 AND `OptionIndex`=1) OR (`MenuId`=6582 AND `OptionIndex`=0) OR (`MenuId`=6581 AND `OptionIndex`=1) OR (`MenuId`=6581 AND `OptionIndex`=0) OR (`MenuId`=6231 AND `OptionIndex`=0) OR (`MenuId`=6182 AND `OptionIndex`=0) OR (`MenuId`=6233 AND `OptionIndex`=0) OR (`MenuId`=6202 AND `OptionIndex`=1) OR (`MenuId`=6202 AND `OptionIndex`=0) OR (`MenuId`=6207 AND `OptionIndex`=8) OR (`MenuId`=6207 AND `OptionIndex`=7) OR (`MenuId`=6207 AND `OptionIndex`=6) OR (`MenuId`=6207 AND `OptionIndex`=5) OR (`MenuId`=6207 AND `OptionIndex`=4) OR (`MenuId`=6207 AND `OptionIndex`=3) OR (`MenuId`=6207 AND `OptionIndex`=2) OR (`MenuId`=6207 AND `OptionIndex`=1) OR (`MenuId`=6207 AND `OptionIndex`=0) OR (`MenuId`=6234 AND `OptionIndex`=0) OR (`MenuId`=6579 AND `OptionIndex`=0) OR (`MenuId`=3331 AND `OptionIndex`=5) OR (`MenuId`=3331 AND `OptionIndex`=4) OR (`MenuId`=3331 AND `OptionIndex`=3) OR (`MenuId`=3331 AND `OptionIndex`=2) OR (`MenuId`=3331 AND `OptionIndex`=1) OR (`MenuId`=3331 AND `OptionIndex`=0) OR (`MenuId`=6230 AND `OptionIndex`=0) OR (`MenuId`=6211 AND `OptionIndex`=0) OR (`MenuId`=6187 AND `OptionIndex`=2) OR (`MenuId`=6187 AND `OptionIndex`=1) OR (`MenuId`=6187 AND `OptionIndex`=0) OR (`MenuId`=6185 AND `OptionIndex`=3) OR (`MenuId`=6185 AND `OptionIndex`=2) OR (`MenuId`=6185 AND `OptionIndex`=1) OR (`MenuId`=6185 AND `OptionIndex`=0) OR (`MenuId`=6186 AND `OptionIndex`=0) OR (`MenuId`=4103 AND `OptionIndex`=0) OR (`MenuId`=5856 AND `OptionIndex`=0) OR (`MenuId`=1294 AND `OptionIndex`=3) OR (`MenuId`=1294 AND `OptionIndex`=2) OR (`MenuId`=1294 AND `OptionIndex`=1) OR (`MenuId`=24 AND `OptionIndex`=0) OR (`MenuId`=5854 AND `OptionIndex`=0) OR (`MenuId`=4185 AND `OptionIndex`=0) OR (`MenuId`=4006 AND `OptionIndex`=0) OR (`MenuId`=4021 AND `OptionIndex`=0);
-UPDATE `gossip_menu` SET VerifiedBuild=26972 WHERE (`MenuId`=10993 AND `TextId`=15290) OR (`MenuId`=11013 AND `TextId`=15221);
-UPDATE `gossip_menu_option` SET VerifiedBuild=26972  WHERE (`MenuId`=10993 AND `OptionIndex`=0) OR (`MenuId`=11013 AND `OptionIndex`=6) OR (`MenuId`=11013 AND `OptionIndex`=5) OR (`MenuId`=11013 AND `OptionIndex`=4) OR (`MenuId`=11013 AND `OptionIndex`=3) OR (`MenuId`=11013 AND `OptionIndex`=1);
+UPDATE `gossip_menu` SET `VerifiedBuild`=26972 WHERE (`MenuId`=10993 AND `TextId`=15290) OR (`MenuId`=11013 AND `TextId`=15221);
+UPDATE `gossip_menu_option` SET `VerifiedBuild`=26972  WHERE (`MenuId`=10993 AND `OptionIndex`=0) OR (`MenuId`=11013 AND `OptionIndex`=6) OR (`MenuId`=11013 AND `OptionIndex`=5) OR (`MenuId`=11013 AND `OptionIndex`=4) OR (`MenuId`=11013 AND `OptionIndex`=3) OR (`MenuId`=11013 AND `OptionIndex`=1);
 
 
 INSERT IGNORE INTO `item_loot_template` (`entry`, `Item`, `Reference`, `Chance`, `QuestRequired`, `LootMode`, `GroupId`, `MinCount`, `MaxCount`, `Comment`) VALUES
@@ -1451,7 +1451,7 @@ INSERT IGNORE INTO `item_loot_template` (`entry`, `Item`, `Reference`, `Chance`,
 UPDATE `gossip_menu` SET `VerifiedBuild`='22566' WHERE  `MenuId`=13017 AND `TextId`=18288;
 
 DELETE FROM `gossip_menu` WHERE (`MenuId`=6201 AND `TextId`=7381) OR (`MenuId`=13018 AND `TextId`=18289);
-INSERT INTO `gossip_menu` (`MenuId`, `TextId` `VerifiedBuild`) VALUES
+INSERT INTO `gossip_menu` (`MenuId`, `TextId`, `VerifiedBuild`) VALUES
 (6201, 7381, 22566), -- 14849
 (13018, 18289, 22566); -- 54601
 
@@ -2412,8 +2412,8 @@ UPDATE `page_text` SET `VerifiedBuild`=23222 WHERE `ID`=5891; -- 5891
 UPDATE `page_text` SET `VerifiedBuild`=23222 WHERE `ID`=5890; -- 5890
 UPDATE `page_text` SET `VerifiedBuild`=23222 WHERE `ID`=5889; -- 5889
 UPDATE `page_text` SET `VerifiedBuild`=23222 WHERE `ID`=5888; -- 5888
-UPDATE `page_text` SET `VerifiedBuild`=23222 WHERE `ID`=5887; -- 5887
 UPDATE `page_text` SET `VerifiedBuild`=23222 WHERE `ID`=5886; -- 5886
+UPDATE `page_text` SET `VerifiedBuild`=23222 WHERE `ID`=5887; -- 5887
 UPDATE `page_text` SET `VerifiedBuild`=23222 WHERE `ID`=5885; -- 5885
 UPDATE `page_text` SET `VerifiedBuild`=23222 WHERE `ID`=5884; -- 5884
 UPDATE `page_text` SET `VerifiedBuild`=23222 WHERE `ID`=5883; -- 5883
@@ -2482,7 +2482,7 @@ UPDATE `npc_text` SET `VerifiedBuild`=23222 WHERE `ID`=29022; -- 29022
 UPDATE `npc_text` SET `VerifiedBuild`=23222 WHERE `ID`=30559; -- 30559
 UPDATE `npc_text` SET `VerifiedBuild`=23222 WHERE `ID`=5006; -- 5006
 UPDATE `trainer` SET `Greeting`='Care to learn how to turn the ore that you find into weapons and metal armor?' WHERE  `Id`=27;
-UPDATE `trainer` SET VerifiedBuild=23420 WHERE `Id` IN (10, 91, 136, 46, 407, 580, 27, 160);
+UPDATE `trainer` SET `VerifiedBuild`=23420 WHERE `Id` IN (10, 91, 136, 46, 407, 580, 27, 160);
 
 
 DELETE FROM `creature_default_trainer` WHERE `CreatureId` IN (56068, 4254, 1701, 1355, 1263, 7955, 1702, 5392, 63075, 1241, 1699, 2326);
@@ -2500,7 +2500,7 @@ INSERT INTO `creature_default_trainer` (`CreatureId`, `TrainerId`) VALUES
 (1699, 136),
 (2326, 160);
 
-Update `gossip_menu` SET VerifiedBuild=23420 WHERE (`MenuId`=6182 AND `TextId`=7334) OR (`MenuId`=6184 AND `TextId`=7338) OR (`MenuId`=5665 AND `TextId`=6961) OR (`MenuId`=6201 AND `TextId`=7381) OR (`MenuId`=13410 AND `TextId`=19057) OR (`MenuId`=13142 AND `TextId`=18508) OR (`MenuId`=13168 AND `TextId`=18562) OR (`MenuId`=6161 AND `TextId`=7314) OR (`MenuId`=13131 AND `TextId`=18472) OR (`MenuId`=13017 AND `TextId`=18288) OR (`MenuId`=6230 AND `TextId`=7404) OR (`MenuId`=6234 AND `TextId`=7387) OR (`MenuId`=11073 AND `TextId`=15400) OR (`MenuId`=6207 AND `TextId`=7356) OR (`MenuId`=6202 AND `TextId`=7355) OR (`MenuId`=8637 AND `TextId`=10831) OR (`MenuId`=8636 AND `TextId`=10833) OR (`MenuId`=8635 AND `TextId`=10832) OR (`MenuId`=8634 AND `TextId`=10834) OR (`MenuId`=6206 AND `TextId`=7360) OR (`MenuId`=6205 AND `TextId`=7359) OR (`MenuId`=6204 AND `TextId`=7358) OR (`MenuId`=6203 AND `TextId`=7357) OR (`MenuId`=13075 AND `TextId`=18372) OR (`MenuId`=6183 AND `TextId`=7337) OR (`MenuId`=15306 AND `TextId`=21955) OR (`MenuId`=13082 AND `TextId`=18371) OR (`MenuId`=13076 AND `TextId`=18363) OR (`MenuId`=13075 AND `TextId`=18362) OR (`MenuId`=13081 AND `TextId`=18370) OR (`MenuId`=13080 AND `TextId`=18369) OR (`MenuId`=13079 AND `TextId`=18366) OR (`MenuId`=13078 AND `TextId`=18365) OR (`MenuId`=13077 AND `TextId`=18364) OR (`MenuId`=8848 AND `TextId`=11472) OR (`MenuId`=13083 AND `TextId`=7795) OR (`MenuId`=6578 AND `TextId`=7794) OR (`MenuId`=6577 AND `TextId`=7793) OR (`MenuId`=13113 AND `TextId`=18444) OR (`MenuId`=12992 AND `TextId`=18269) OR (`MenuId`=4359 AND `TextId`=5581) OR (`MenuId`=7690 AND `TextId`=9384) OR (`MenuId`=5853 AND `TextId`=7021) OR (`MenuId`=4001 AND `TextId`=4855) OR (`MenuId`=11523 AND `TextId`=16077) OR (`MenuId`=3186 AND `TextId`=5857) OR (`MenuId`=4135 AND `TextId`=5112) OR (`MenuId`=14991 AND `TextId`=20326) OR (`MenuId`=4783 AND `TextId`=5839) OR (`MenuId`=12180 AND `TextId`=17125) OR (`MenuId`=2741 AND `TextId`=3395) OR (`MenuId`=13953 AND `TextId`=4833) OR (`MenuId`=13950 AND `TextId`=5724) OR (`MenuId`=5855 AND `TextId`=7028) OR (`MenuId`=13948 AND `TextId`=4435) OR (`MenuId`=1297 AND `TextId`=823) OR (`MenuId`=9821 AND `TextId`=13584) OR (`MenuId`=11519 AND `TextId`=16074);
+Update `gossip_menu` SET `VerifiedBuild`=23420 WHERE (`MenuId`=6182 AND `TextId`=7334) OR (`MenuId`=6184 AND `TextId`=7338) OR (`MenuId`=5665 AND `TextId`=6961) OR (`MenuId`=6201 AND `TextId`=7381) OR (`MenuId`=13410 AND `TextId`=19057) OR (`MenuId`=13142 AND `TextId`=18508) OR (`MenuId`=13168 AND `TextId`=18562) OR (`MenuId`=6161 AND `TextId`=7314) OR (`MenuId`=13131 AND `TextId`=18472) OR (`MenuId`=13017 AND `TextId`=18288) OR (`MenuId`=6230 AND `TextId`=7404) OR (`MenuId`=6234 AND `TextId`=7387) OR (`MenuId`=11073 AND `TextId`=15400) OR (`MenuId`=6207 AND `TextId`=7356) OR (`MenuId`=6202 AND `TextId`=7355) OR (`MenuId`=8637 AND `TextId`=10831) OR (`MenuId`=8636 AND `TextId`=10833) OR (`MenuId`=8635 AND `TextId`=10832) OR (`MenuId`=8634 AND `TextId`=10834) OR (`MenuId`=6206 AND `TextId`=7360) OR (`MenuId`=6205 AND `TextId`=7359) OR (`MenuId`=6204 AND `TextId`=7358) OR (`MenuId`=6203 AND `TextId`=7357) OR (`MenuId`=13075 AND `TextId`=18372) OR (`MenuId`=6183 AND `TextId`=7337) OR (`MenuId`=15306 AND `TextId`=21955) OR (`MenuId`=13082 AND `TextId`=18371) OR (`MenuId`=13076 AND `TextId`=18363) OR (`MenuId`=13075 AND `TextId`=18362) OR (`MenuId`=13081 AND `TextId`=18370) OR (`MenuId`=13080 AND `TextId`=18369) OR (`MenuId`=13079 AND `TextId`=18366) OR (`MenuId`=13078 AND `TextId`=18365) OR (`MenuId`=13077 AND `TextId`=18364) OR (`MenuId`=8848 AND `TextId`=11472) OR (`MenuId`=13083 AND `TextId`=7795) OR (`MenuId`=6578 AND `TextId`=7794) OR (`MenuId`=6577 AND `TextId`=7793) OR (`MenuId`=13113 AND `TextId`=18444) OR (`MenuId`=12992 AND `TextId`=18269) OR (`MenuId`=4359 AND `TextId`=5581) OR (`MenuId`=7690 AND `TextId`=9384) OR (`MenuId`=5853 AND `TextId`=7021) OR (`MenuId`=4001 AND `TextId`=4855) OR (`MenuId`=11523 AND `TextId`=16077) OR (`MenuId`=3186 AND `TextId`=5857) OR (`MenuId`=4135 AND `TextId`=5112) OR (`MenuId`=14991 AND `TextId`=20326) OR (`MenuId`=4783 AND `TextId`=5839) OR (`MenuId`=12180 AND `TextId`=17125) OR (`MenuId`=2741 AND `TextId`=3395) OR (`MenuId`=13953 AND `TextId`=4833) OR (`MenuId`=13950 AND `TextId`=5724) OR (`MenuId`=5855 AND `TextId`=7028) OR (`MenuId`=13948 AND `TextId`=4435) OR (`MenuId`=1297 AND `TextId`=823) OR (`MenuId`=9821 AND `TextId`=13584) OR (`MenuId`=11519 AND `TextId`=16074);
 
 
 DELETE FROM `npc_vendor` WHERE (`entry`=90974 AND `item`=128527 AND `ExtendedCost`=5912 AND `type`=1) OR (`entry`=90974 AND `item`=128482 AND `ExtendedCost`=5913 AND `type`=1) OR (`entry`=90974 AND `item`=128250 AND `ExtendedCost`=5919 AND `type`=1) OR (`entry`=90974 AND `item`=128444 AND `ExtendedCost`=5918 AND `type`=1) OR (`entry`=90974 AND `item`=128462 AND `ExtendedCost`=5916 AND `type`=1) OR (`entry`=90974 AND `item`=128491 AND `ExtendedCost`=5921 AND `type`=1) OR (`entry`=90974 AND `item`=128445 AND `ExtendedCost`=5920 AND `type`=1) OR (`entry`=90974 AND `item`=128474 AND `ExtendedCost`=5911 AND `type`=1) OR (`entry`=90974 AND `item`=128452 AND `ExtendedCost`=5905 AND `type`=1) OR (`entry`=90974 AND `item`=128492 AND `ExtendedCost`=5915 AND `type`=1) OR (`entry`=90974 AND `item`=128294 AND `ExtendedCost`=5894 AND `type`=1) OR (`entry`=90977 AND `item`=3857 AND `ExtendedCost`=0 AND `type`=1) OR (`entry`=90977 AND `item`=18567 AND `ExtendedCost`=0 AND `type`=1) OR (`entry`=90977 AND `item`=3466 AND `ExtendedCost`=0 AND `type`=1) OR (`entry`=90977 AND `item`=2880 AND `ExtendedCost`=0 AND `type`=1) OR (`entry`=90977 AND `item`=5956 AND `ExtendedCost`=0 AND `type`=1) OR (`entry`=90977 AND `item`=2901 AND `ExtendedCost`=0 AND `type`=1) OR (`entry`=95424 AND `item`=128487 AND `ExtendedCost`=5909 AND `type`=1) OR (`entry`=95424 AND `item`=128478 AND `ExtendedCost`=5458 AND `type`=1) OR (`entry`=95424 AND `item`=128450 AND `ExtendedCost`=5908 AND `type`=1) OR (`entry`=95424 AND `item`=128503 AND `ExtendedCost`=5923 AND `type`=1) OR (`entry`=95424 AND `item`=122283 AND `ExtendedCost`=5903 AND `type`=1) OR (`entry`=95424 AND `item`=128502 AND `ExtendedCost`=5922 AND `type`=1) OR (`entry`=95424 AND `item`=128441 AND `ExtendedCost`=5904 AND `type`=1) OR (`entry`=95424 AND `item`=128454 AND `ExtendedCost`=5905 AND `type`=1) OR (`entry`=95424 AND `item`=123974 AND `ExtendedCost`=5883 AND `type`=1) OR (`entry`=95424 AND `item`=127785 AND `ExtendedCost`=5953 AND `type`=1) OR (`entry`=96130 AND `item`=124560 AND `ExtendedCost`=5899 AND `type`=1) OR (`entry`=96130 AND `item`=124559 AND `ExtendedCost`=5899 AND `type`=1) OR (`entry`=96130 AND `item`=124558 AND `ExtendedCost`=5899 AND `type`=1) OR (`entry`=96130 AND `item`=124557 AND `ExtendedCost`=5899 AND `type`=1) OR (`entry`=96130 AND `item`=124556 AND `ExtendedCost`=5899 AND `type`=1) OR (`entry`=96130 AND `item`=124553 AND `ExtendedCost`=5899 AND `type`=1) OR (`entry`=96130 AND `item`=124552 AND `ExtendedCost`=5899 AND `type`=1) OR (`entry`=96130 AND `item`=124550 AND `ExtendedCost`=5899 AND `type`=1) OR (`entry`=96130 AND `item`=124555 AND `ExtendedCost`=5899 AND `type`=1) OR (`entry`=96130 AND `item`=124551 AND `ExtendedCost`=5899 AND `type`=1) OR (`entry`=96130 AND `item`=124554 AND `ExtendedCost`=5899 AND `type`=1) OR (`entry`=96130 AND `item`=124561 AND `ExtendedCost`=5899 AND `type`=1) OR (`entry`=96130 AND `item`=124562 AND `ExtendedCost`=5898 AND `type`=1) OR (`entry`=96130 AND `item`=994 AND `ExtendedCost`=5893 AND `type`=2) OR (`entry`=96130 AND `item`=128225 AND `ExtendedCost`=5892 AND `type`=1) OR (`entry`=90972 AND `item`=115355 AND `ExtendedCost`=0 AND `type`=1) OR (`entry`=90972 AND `item`=115354 AND `ExtendedCost`=0 AND `type`=1) OR (`entry`=90972 AND `item`=115353 AND `ExtendedCost`=0 AND `type`=1) OR (`entry`=90972 AND `item`=115352 AND `ExtendedCost`=0 AND `type`=1) OR (`entry`=90972 AND `item`=115351 AND `ExtendedCost`=0 AND `type`=1) OR (`entry`=90972 AND `item`=117452 AND `ExtendedCost`=0 AND `type`=1) OR (`entry`=32639 AND `item`=4565 AND `ExtendedCost`=0 AND `type`=1) OR (`entry`=32639 AND `item`=79249 AND `ExtendedCost`=0 AND `type`=1) OR (`entry`=32639 AND `item`=63388 AND `ExtendedCost`=0 AND `type`=1) OR (`entry`=32639 AND `item`=64670 AND `ExtendedCost`=0 AND `type`=1) OR (`entry`=32639 AND `item`=39505 AND `ExtendedCost`=0 AND `type`=1) OR (`entry`=32639 AND `item`=20815 AND `ExtendedCost`=0 AND `type`=1) OR (`entry`=32639 AND `item`=39354 AND `ExtendedCost`=0 AND `type`=1) OR (`entry`=32639 AND `item`=6532 AND `ExtendedCost`=0 AND `type`=1) OR (`entry`=32639 AND `item`=3371 AND `ExtendedCost`=0 AND `type`=1) OR (`entry`=32639 AND `item`=38426 AND `ExtendedCost`=0 AND `type`=1) OR (`entry`=32639 AND `item`=14341 AND `ExtendedCost`=0 AND `type`=1);
@@ -2565,7 +2565,8 @@ INSERT INTO `npc_vendor` (`entry`, `slot`, `item`, `maxcount`, `ExtendedCost`, `
 (32639, 2, 38426, 0, 0, 1, 0, 0, 21463), -- 38426
 (32639, 1, 14341, 0, 0, 1, 0, 0, 21463); -- 14341
 
-DELETE FROM creature WHERE id=15879 AND map=0 AND zoneid=12;
+DELETE FROM `creature` WHERE `id`=15879 AND `map`=0 AND `zoneid`=12;
 
+DELETE FROM `areatrigger` WHERE `guid` IN (48,49);
 INSERT INTO `areatrigger` VALUES ('49', '100007', '1712', '245760', '-3442.35', '9521.4', '9.57194', '');
 INSERT INTO `areatrigger` VALUES ('48', '100010', '1669', '1', '-3217.97', '9423.45', '-172.491', '');

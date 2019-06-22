@@ -83,8 +83,8 @@ INSERT INTO `spell_areatrigger` (`SpellMiscId`, `AreaTriggerId`, `MoveCurveId`, 
 (5985, 5985, 0, 0, 0, 0, 0, 0, 120000, 23420), -- SpellId : 203882
 (5903, 5903, 0, 0, 0, 0, 0, 0, 12500, 23420); -- SpellId : 203090
 
-DELETE FROM `creature_text` WHERE `entry` = @VANDROS;
-INSERT INTO `creature_text`(`entry`, `groupid`, `id`, `text`, `type`, `probability`, `sound`, `comment`) VALUES
+DELETE FROM `creature_text` WHERE `CreatureID` = @VANDROS;
+INSERT INTO `creature_text`(`CreatureID`, `GroupID`, `ID`, `Text`, `Type`, `Probability`, `Sound`, `comment`) VALUES
 (@VANDROS, '0', '0', 'My, my... Someone has made quite a mess down here. It has been too long since we purged these catacombs of refuse. It appears we have a rat infestation.', '14', '100', '58644', 'VANDROS - INTRO'),
 (@VANDROS, '1', '0', 'Find the vermin and bring me their heads! Leave no stone unturned!', '14', '100', '58645', 'VANDROS - INTRO2'),
 (@VANDROS, '2', '0', 'I have not survived for ten thousand years just to fall to a swarm of rats.', '14', '100', '58646', 'VANDROS - AGGRO'),

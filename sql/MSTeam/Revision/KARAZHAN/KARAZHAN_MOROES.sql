@@ -46,8 +46,8 @@ DELETE FROM `spell_areatrigger` WHERE `SpellMiscId` IN (8782);
 INSERT INTO `spell_areatrigger` (`SpellMiscId`, `AreaTriggerId`, `MoveCurveId`, `ScaleCurveId`, `MorphCurveId`, `FacingCurveId`, `DecalPropertiesId`, `TimeToTarget`, `TimeToTargetScale`, `VerifiedBuild`) VALUES
 (8782, 8782, 0, 0, 0, 0, 0, 0, 0, 23420); -- SpellId: 227472
 
-DELETE FROM `creature_text` WHERE `entry` = @MOROES;
-INSERT INTO `creature_text`(`entry`, `groupid`, `id`, `text`, `type`, `probability`, `sound`, `comment`) VALUES
+DELETE FROM `creature_text` WHERE `creatureid` = @MOROES;
+INSERT INTO `creature_text`(`creatureid`, `groupid`, `id`, `text`, `type`, `probability`, `sound`, `comment`) VALUES
 (@MOROES, '0', '1', 'The master has not been himself for quite some time. Perhaps a feast will brighten his spirit.', '14', '100', '58641', 'MOROES - INTRO'),
 (@MOROES, '1', '0', 'I don\'t believe the master is expecting you!', '14', '100', '58644', 'MORES - AGGRO'),
 (@MOROES, '1', '1', 'I do so detest party crashers!', '14', '100', '58644', 'MOROES - AGGRO'),

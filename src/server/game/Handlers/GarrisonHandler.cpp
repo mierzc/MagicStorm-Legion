@@ -78,14 +78,22 @@ void WorldSession::HandleGarrisonGetBuildingLandmarks(WorldPackets::Garrison::Ga
     if (Garrison* garrison = _player->GetGarrison(GARRISON_TYPE_GARRISON))
         garrison->ToWodGarrison()->SendBuildingLandmarks(_player);
 }
-
 void WorldSession::HandleGarrisonOpenMissionNpc(WorldPackets::Garrison::GarrisonOpenMissionNpcClient& garrisonOpenMissionNpcClient)
 {
     if (!_player->GetNPCIfCanInteractWith(garrisonOpenMissionNpcClient.NpcGUID, UNIT_NPC_FLAG_GARRISON_MISSION_NPC))
         return;
 
     GarrisonType garType = GARRISON_TYPE_CLASS_HALL; // Todo : differenciate depending of NPC
-
+    switch (garrisonOpenMissionNpcClient.NpcGUID.GetEntry())
+    {
+    case 80432:
+    case 81546:
+        garType = GARRISON_TYPE_GARRISON;
+        break;
+    default:
+        garType = GARRISON_TYPE_CLASS_HALL;
+        break;
+    }
     Garrison const* garrison = _player->GetGarrison(garType);
 
     if (!garrison)

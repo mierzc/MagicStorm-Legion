@@ -3,14 +3,14 @@ INSERT INTO `creature_text` (`CreatureID`, `GroupID`, `ID`, `Text`, `Type`, `Lan
 ('54404', '0', '0', 'Behold Ragnaros - the Firelord! He who was ancient when this world was young! Bow before him, mortals! Bow before your ending!', '14', '0', '100', '0', '0', '8040', '7657', '0', 'majordomo SAY_SUMMON_MAJ'),
 ('54404', '1', '0', 'These mortal infidels, my lord! They have invaded your sanctum and seek to steal your secrets!', '14', '0', '100', '0', '0', '8041', '7661', '0', 'majordomo SAY_ARRIVAL2_MAJ');
 
---Quest DK (Death's Challenge)
-UPDATE creature_template SET npcflag = 1 WHERE entry = 28406;
+-- Quest DK (Death's Challenge)
+UPDATE `creature_template` SET npcflag = 1 WHERE `entry` = 28406;
 
 
 DELETE FROM `gameobject_template` WHERE `entry` = 214406;
 INSERT INTO `gameobject_template` (`entry`, `type`, `displayId`, `name`, `IconName`, `castBarCaption`, `unk1`, `size`, `Data0`, `Data1`, `Data2`, `Data3`, `Data4`, `Data5`, `Data6`, `Data7`, `Data8`, `Data9`, `Data10`, `Data11`, `Data12`, `Data13`, `Data14`, `Data15`, `Data16`, `Data17`, `Data18`, `Data19`, `Data20`, `Data21`, `Data22`, `Data23`, `Data24`, `Data25`, `Data26`, `Data27`, `Data28`, `Data29`, `Data30`, `Data31`, `Data32`, `RequiredLevel`, `AIName`, `ScriptName`, `VerifiedBuild`) VALUES ('214406', '3', '12426', 'Dai-Lo Recess Mallet', '', 'Collecting', '', '0.6', '43', '214406', '1', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '19676', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '', '', '20886');
 
-DELETE FROM gameobject_loot_template WHERE  `entry` = 214406;
+DELETE FROM `gameobject_loot_template` WHERE  `entry` = 214406;
 INSERT INTO `gameobject_loot_template` (`Entry`, `Item`, `Reference`, `Chance`, `QuestRequired`, `LootMode`, `GroupId`, `MinCount`, `MaxCount`, `Comment`) VALUES ('214406', '74298', '0', '100', '1', '1', '0', '1', '1', '');
 
 SET @DUROTAR_TELESCOPE := 39320;
@@ -186,8 +186,8 @@ INSERT INTO `conditions` (`SourceTypeOrReferenceId`,`SourceGroup`,`SourceEntry`,
 
 UPDATE `smart_scripts` SET `link`=10 WHERE `entryorguid`=27959 AND `source_type`=0 AND `id`=9;
 
-DELETE FROM conditions WHERE SourceTypeOrReferenceId=13 AND SourceEntry=46704;
-INSERT INTO conditions VALUES (13, 1, 46704, 0, 0, 31, 0, 3, 26127, 0, 0, 0, 0, '', 'Target Nexus Drake Hatchling');
+DELETE FROM `conditions` WHERE `SourceTypeOrReferenceId`=13 AND `SourceEntry`=46704;
+INSERT INTO `conditions` VALUES (13, 1, 46704, 0, 0, 31, 0, 3, 26127, 0, 0, 0, 0, '', 'Target Nexus Drake Hatchling');
 
 -- Raelorasz SAI
 SET @ENTRY := 26117;
@@ -226,9 +226,9 @@ INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type
 
 UPDATE `creature_template` SET `InhabitType`=4 WHERE `entry`=23123;
 UPDATE `creature_template` SET `InhabitType`=1 WHERE `entry`=17474;
-UPDATE `creature_template` SET `spell2`=0, `spell3`=0, `spell4`=0, `flags_extra` = `flags_extra` |256 WHERE `entry`=17
+UPDATE `creature_template` SET `spell2`=0, `spell3`=0, `spell4`=0, `flags_extra` = `flags_extra` |256 WHERE `entry`=17;
 UPDATE `creature_template` SET `npcflag`='0' WHERE  `entry`=91904;
-UPDATE creature_template SET lootid = 62346 WHERE entry = 62346 AND lootid = 0;
+UPDATE `creature_template` SET lootid = 62346 WHERE `entry` = 62346 AND lootid = 0;
 
 DELETE FROM `creature_loot_template` WHERE `Entry`=62346 AND `Item`=89783;
 INSERT INTO `creature_loot_template` (`Entry`, `Item`, `Reference`, `Chance`, `QuestRequired`, `LootMode`, `GroupId`, `MinCount`, `MaxCount`, `Comment`) VALUES (62346, 89783, 0, 18, 0, 1, 1, 1, 1, '');

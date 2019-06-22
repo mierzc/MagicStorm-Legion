@@ -2,13 +2,13 @@
 -- Updates - Creatures - GameObjects - Vendor
 =============*/
 DELETE FROM creature WHERE `guid` IN (72518,72581,224921);
-INSERT INTO `creature` (`guid`, `id`, `map`, `zoneId`, `areaId`, `spawnMask`, `phaseUseFlags`, `PhaseId`, `PhaseGroup`, `terrainSwapMap`, `modelid`, `equipment_id`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecs`, `spawndist`, `currentwaypoint`, `curhealth`, `curmana`, `MovementType`, `npcflag`, `unit_flags`, `unit_flags2`, `unit_flags3`, `dynamicflags`, `ScriptName`, `VerifiedBuild`) VALUES
+INSERT INTO `creature` (`guid`, `id`, `map`, `zoneId`, `areaId`, `spawnDifficulties`, `phaseUseFlags`, `PhaseId`, `PhaseGroup`, `terrainSwapMap`, `modelid`, `equipment_id`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecs`, `spawndist`, `currentwaypoint`, `curhealth`, `curmana`, `MovementType`, `npcflag`, `unit_flags`, `unit_flags2`, `unit_flags3`, `dynamicflags`, `ScriptName`, `VerifiedBuild`) VALUES
 (72518, 123252, 530, 3703, 3703, 0, 0, 0, 0, -1, 0, 0, -1806.32, 5417.35, 0.886856, 2.68444, 180, 0, 0, 87, 0, 0, 0, 0, 0, 0, 0, '', 26365), 
 (72581,  98685, 530, 3703, 3703, 0, 0, 0, 0, -1, 0, 0, -1805.35, 5419.72, 0.985384, 2.63731, 180, 0, 0, 87, 0, 0, 0, 0, 0, 0, 0, '', 26365), 
 (224921, 101759, 0,   1519, 5428, 0, 0, 0, 0, -1, 0, 0, -8196.54, 399.192, 117.2882, 2.44555, 180, 0, 0, 87, 0, 0, 0, 0, 0, 0, 0, '', 26365);
 
 DELETE FROM `gameobject` WHERE `guid` IN (79317,79319,79320);
-INSERT INTO `gameobject` (`guid`, `id`, `map`, `zoneId`, `areaId`, `spawnMask`, `PhaseId`, `PhaseGroup`, `position_x`, `position_y`, `position_z`, `orientation`, `rotation0`, `rotation1`, `rotation2`, `rotation3`, `spawntimesecs`, `animprogress`, `state`, `VerifiedBuild`) VALUES
+INSERT INTO `gameobject` (`guid`, `id`, `map`, `zoneId`, `areaId`, `spawnDifficulties`, `PhaseId`, `PhaseGroup`, `position_x`, `position_y`, `position_z`, `orientation`, `rotation0`, `rotation1`, `rotation2`, `rotation3`, `spawntimesecs`, `animprogress`, `state`, `VerifiedBuild`) VALUES
 (79317, 245436, 530, 3703, 3703, 0, 0, 0, -1806.32, 5417.35, 0.886856, 2.68444, 0, 0, 0.9400492, 0.3410389, 180, 255, 1, 27843),
 (79319, 245436, 530, 3703, 3703, 0, 0, 0, -1805.35, 5419.72, 0.985384, 2.63731, 0, 0, 0.9400492, 0.3410389, 180, 255, 1, 27843),
 (79320, 245436, 0,   1519, 5428, 0, 0, 0, -8196.54, 399.192, 117.2882, 2.44554, 0, 0, 0.9400492, 0.3410389, 180, 255, 1, 27843);

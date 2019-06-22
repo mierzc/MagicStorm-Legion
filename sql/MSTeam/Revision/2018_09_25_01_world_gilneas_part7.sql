@@ -190,9 +190,9 @@ DELETE FROM `spell_area` WHERE `spell`=69484 AND `area`=4482;
 
 
 -- Captive Worgen (36698,36797,36798)
-UPDATE creature_template SET modelid1=30294 AND modelid2=30293 AND modelid3=30295 AND modelid4=0 WHERE entry IN (36698);
-UPDATE creature_template SET modelid1=30293 AND modelid2=30294 AND modelid3=30295 AND modelid4=0 WHERE entry IN (36797);
-UPDATE creature_template SET modelid1=30295 AND modelid2=30294 AND modelid3=30293 AND modelid4=0 WHERE entry IN (36798);
+UPDATE `creature_template` SET `modelid1`=30294 AND `modelid2`=30293 AND `modelid3`=30295 AND `modelid4`=0 WHERE `entry` IN (36698);
+UPDATE `creature_template` SET `modelid1`=30293 AND `modelid2`=30294 AND `modelid3`=30295 AND `modelid4`=0 WHERE `entry` IN (36797);
+UPDATE `creature_template` SET `modelid1`=30295 AND `modelid2`=30294 AND `modelid3`=30293 AND `modelid4`=0 WHERE `entry` IN (36798);
 
 
 -- Mountain Horse (36540)
@@ -201,7 +201,7 @@ UPDATE `creature_template` SET `spell1`='68903' AND `unit_flags`='16777216' WHER
 
 -- NN (196399)
 DELETE FROM `gameobject` WHERE `guid`=94611;
-INSERT INTO `gameobject` (`guid`, `id`, `map`, `zoneId`, `areaId`, `spawnMask`, `phaseUseFlags`, `PhaseId`, `PhaseGroup`, `terrainSwapMap`, `position_x`, `position_y`, `position_z`, `orientation`, `rotation0`, `rotation1`, `rotation2`, `rotation3`, `spawntimesecs`, `animprogress`, `state`, `isActive`, `ScriptName`, `VerifiedBuild`) VALUES 
+INSERT INTO `gameobject` (`guid`, `id`, `map`, `zoneId`, `areaId`, `spawnDifficulties`, `phaseUseFlags`, `PhaseId`, `PhaseGroup`, `terrainSwapMap`, `position_x`, `position_y`, `position_z`, `orientation`, `rotation0`, `rotation1`, `rotation2`, `rotation3`, `spawntimesecs`, `animprogress`, `state`, `isActive`, `ScriptName`, `VerifiedBuild`) VALUES 
 (94611, 196399, 654, 4714, 4756, 1, 0, 0, 385, -1, -1817.84, 2333.37, 36.3445, 3.79899, 0, 0, -0.946463, 0.322813, 180, 255, 1, 0, '', 25383);
 
 DELETE FROM `gameobject_template_addon` WHERE `entry`=196399;
@@ -211,7 +211,7 @@ INSERT INTO `gameobject_template_addon` (`entry`, `faction`, `flags`, `mingold`,
 
 -- Puerta del Rey (196412)
 DELETE FROM `gameobject` WHERE `guid`=94609;
-INSERT INTO `gameobject` (`guid`, `id`, `map`, `zoneId`, `areaId`, `spawnMask`, `phaseUseFlags`, `PhaseId`, `PhaseGroup`, `terrainSwapMap`, `position_x`, `position_y`, `position_z`, `orientation`, `rotation0`, `rotation1`, `rotation2`, `rotation3`, `spawntimesecs`, `animprogress`, `state`, `isActive`, `ScriptName`, `VerifiedBuild`) VALUES 
+INSERT INTO `gameobject` (`guid`, `id`, `map`, `zoneId`, `areaId`, `spawnDifficulties`, `phaseUseFlags`, `PhaseId`, `PhaseGroup`, `terrainSwapMap`, `position_x`, `position_y`, `position_z`, `orientation`, `rotation0`, `rotation1`, `rotation2`, `rotation3`, `spawntimesecs`, `animprogress`, `state`, `isActive`, `ScriptName`, `VerifiedBuild`) VALUES 
 (94609, 196412, 654, 4755, 4756, 1, 0, 0, 385, -1, -1872.92, 2073.58, 89.1548, 1.54751, 0, 0, 0.698826, 0.715292, 180, 255, 1, 0, '', 25383);
 
 DELETE FROM `gameobject_template_addon` WHERE `entry`=196412;
@@ -221,7 +221,7 @@ INSERT INTO `gameobject_template_addon` (`entry`, `faction`, `flags`, `mingold`,
 
 -- NN (196401)
 DELETE FROM `gameobject` WHERE `guid`=94605;
-INSERT INTO `gameobject` (`guid`, `id`, `map`, `zoneId`, `areaId`, `spawnMask`, `phaseUseFlags`, `PhaseId`, `PhaseGroup`, `terrainSwapMap`, `position_x`, `position_y`, `position_z`, `orientation`, `rotation0`, `rotation1`, `rotation2`, `rotation3`, `spawntimesecs`, `animprogress`, `state`, `isActive`, `ScriptName`, `VerifiedBuild`) VALUES 
+INSERT INTO `gameobject` (`guid`, `id`, `map`, `zoneId`, `areaId`, `spawnDifficulties`, `phaseUseFlags`, `PhaseId`, `PhaseGroup`, `terrainSwapMap`, `position_x`, `position_y`, `position_z`, `orientation`, `rotation0`, `rotation1`, `rotation2`, `rotation3`, `spawntimesecs`, `animprogress`, `state`, `isActive`, `ScriptName`, `VerifiedBuild`) VALUES 
 (94605, 196401, 654, 4755, 4756, 1, 0, 0, 385, -1, -1681.84, 2507.57, 97.7786, 3.93862, 0, 0, -0.921639, 0.388047, 180, 255, 1, 0, '', 25383);
 
 DELETE FROM `gameobject_template_addon` WHERE `entry`=196401;
@@ -231,24 +231,24 @@ INSERT INTO `gameobject_template_addon` (`entry`, `faction`, `flags`, `mingold`,
 
 -- Anvil (196880)
 DELETE FROM `gameobject` WHERE `guid`=95433;
-INSERT INTO `gameobject` (`guid`, `id`, `map`, `zoneId`, `areaId`, `spawnMask`, `phaseUseFlags`, `PhaseId`, `PhaseGroup`, `terrainSwapMap`, `position_x`, `position_y`, `position_z`, `orientation`, `rotation0`, `rotation1`, `rotation2`, `rotation3`, `spawntimesecs`, `animprogress`, `state`, `isActive`, `ScriptName`, `VerifiedBuild`) VALUES 
+INSERT INTO `gameobject` (`guid`, `id`, `map`, `zoneId`, `areaId`, `spawnDifficulties`, `phaseUseFlags`, `PhaseId`, `PhaseGroup`, `terrainSwapMap`, `position_x`, `position_y`, `position_z`, `orientation`, `rotation0`, `rotation1`, `rotation2`, `rotation3`, `spawntimesecs`, `animprogress`, `state`, `isActive`, `ScriptName`, `VerifiedBuild`) VALUES 
 (95433, 196880, 654, 4714, 4786, 1, 0, 0, 385, -1, -1865.89, 2232.71, 42.3229, 5.37562, 0, 0, -0.43837, 0.898795, 180, 255, 1, 0, '', 26365);
 
 
 -- Forge (196879)
 DELETE FROM `gameobject` WHERE `guid`=95435;
-INSERT INTO `gameobject` (`guid`, `id`, `map`, `zoneId`, `areaId`, `spawnMask`, `phaseUseFlags`, `PhaseId`, `PhaseGroup`, `terrainSwapMap`, `position_x`, `position_y`, `position_z`, `orientation`, `rotation0`, `rotation1`, `rotation2`, `rotation3`, `spawntimesecs`, `animprogress`, `state`, `isActive`, `ScriptName`, `VerifiedBuild`) VALUES 
+INSERT INTO `gameobject` (`guid`, `id`, `map`, `zoneId`, `areaId`, `spawnDifficulties`, `phaseUseFlags`, `PhaseId`, `PhaseGroup`, `terrainSwapMap`, `position_x`, `position_y`, `position_z`, `orientation`, `rotation0`, `rotation1`, `rotation2`, `rotation3`, `spawntimesecs`, `animprogress`, `state`, `isActive`, `ScriptName`, `VerifiedBuild`) VALUES 
 (95435, 196879, 654, 4714, 4786, 1, 0, 0, 385, -1, -1869.11, 2229.79, 42.3233, 1.72787, 0, 0, 0.760405, 0.649449, 180, 255, 1, 0, '', 26365);
 
 
 -- Terrain Swap Defaults
-DELETE FROM terrain_swap_defaults WHERE MapId = 654 AND TerrainSwapMap IN (655,656);
-INSERT INTO terrain_swap_defaults (MapId, TerrainSwapMap, Comment) VALUES
+DELETE FROM `terrain_swap_defaults` WHERE `MapId` = 654 AND `TerrainSwapMap` IN (655,656);
+INSERT INTO `terrain_swap_defaults` (`MapId`, `TerrainSwapMap`, Comment) VALUES
 (654, 655, 'Gilneas Duskhaven Phase 1'),
 (654, 656, 'Gilneas Duskhaven Phase 2');
 
-DELETE FROM conditions WHERE SourceTypeOrReferenceId=25 AND SourceEntry IN (638,655,656);
-INSERT INTO conditions (SourceTypeOrReferenceId, SourceEntry, ElseGroup, ConditionTypeOrReference, ConditionValue1, ConditionValue2, NegativeCondition) VALUES
+DELETE FROM `conditions` WHERE `SourceTypeOrReferenceId`=25 AND `SourceEntry` IN (638,655,656);
+INSERT INTO `conditions` (`SourceTypeOrReferenceId`, `SourceEntry`, `ElseGroup`, `ConditionTypeOrReference`, `ConditionValue1`, `ConditionValue2`, `NegativeCondition`) VALUES
 (25, 638, 0, 47, 14396, 74, 1),
 (25, 655, 0, 47, 14396, 74, 0),
 (25, 655, 0, 47, 14467, 74, 1),
@@ -257,7 +257,7 @@ INSERT INTO conditions (SourceTypeOrReferenceId, SourceEntry, ElseGroup, Conditi
 
 -- Rebel Cannon (35317)
 DELETE FROM `creature` WHERE `guid` IN (223293,223288,223283,223281,223275,223270,223255);
-INSERT INTO `creature` (`guid`, `id`, `map`, `zoneId`, `areaId`, `spawnMask`, `phaseUseFlags`, `PhaseId`, `PhaseGroup`, `terrainSwapMap`, `modelid`, `equipment_id`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecs`, `spawndist`, `currentwaypoint`, `curhealth`, `curmana`, `MovementType`, `npcflag`, `unit_flags`, `unit_flags2`, `unit_flags3`, `dynamicflags`, `ScriptName`, `VerifiedBuild`) VALUES 
+INSERT INTO `creature` (`guid`, `id`, `map`, `zoneId`, `areaId`, `spawnDifficulties`, `phaseUseFlags`, `PhaseId`, `PhaseGroup`, `terrainSwapMap`, `modelid`, `equipment_id`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecs`, `spawndist`, `currentwaypoint`, `curhealth`, `curmana`, `MovementType`, `npcflag`, `unit_flags`, `unit_flags2`, `unit_flags3`, `dynamicflags`, `ScriptName`, `VerifiedBuild`) VALUES 
 (223293, 35317, 654, 4755, 4759, 1, 0, 172, 0, -1, 0, 0, -1533.46, 1591.96, 26.5365, 0.944223, 180, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, '', 25383),
 (223288, 35317, 654, 4755, 4759, 1, 0, 172, 0, -1, 0, 0, -1540.95, 1596.29, 26.5364, 1.56207, 180, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, '', 25383),
 (223283, 35317, 654, 4755, 4759, 1, 0, 172, 0, -1, 0, 0, -1528.7, 1610.23, 20.5689, 1.06465, 180, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, '', 25383),
@@ -275,13 +275,13 @@ INSERT INTO `npc_spellclick_spells` (`npc_entry`, `spell_id`, `cast_flags`, `use
 
 -- Crate of Mandrake Essence (196394)
 DELETE FROM `gameobject` WHERE `id`=196394;
-INSERT INTO `gameobject` (`guid`, `id`, `map`, `zoneId`, `areaId`, `spawnMask`, `phaseUseFlags`, `PhaseId`, `PhaseGroup`, `terrainSwapMap`, `position_x`, `position_y`, `position_z`, `orientation`, `rotation0`, `rotation1`, `rotation2`, `rotation3`, `spawntimesecs`, `animprogress`, `state`, `isActive`, `ScriptName`, `VerifiedBuild`) VALUES 
+INSERT INTO `gameobject` (`guid`, `id`, `map`, `zoneId`, `areaId`, `spawnDifficulties`, `phaseUseFlags`, `PhaseId`, `PhaseGroup`, `terrainSwapMap`, `position_x`, `position_y`, `position_z`, `orientation`, `rotation0`, `rotation1`, `rotation2`, `rotation3`, `spawntimesecs`, `animprogress`, `state`, `isActive`, `ScriptName`, `VerifiedBuild`) VALUES 
 (95443, 196394, 654, 0, 0, 1, 0, 0, 385, -1, -1926.27, 2408.62, 30.0234, 5.44543, 0, 0, -0.406736, 0.913545, 180, 255, 1, 0, '', 26365);
 
 
 -- Black Gunpowder Keg (196403)
-DELETE FROM `gameobject` WHERE `id`=196403;
-INSERT INTO `gameobject` (`guid`, `id`, `map`, `zoneId`, `areaId`, `spawnMask`, `phaseUseFlags`, `PhaseId`, `PhaseGroup`, `terrainSwapMap`, `position_x`, `position_y`, `position_z`, `orientation`, `rotation0`, `rotation1`, `rotation2`, `rotation3`, `spawntimesecs`, `animprogress`, `state`, `isActive`, `ScriptName`, `VerifiedBuild`) VALUES 
+DELETE FROM `gameobject` WHERE `guid` IN (95450,95449,95452,95456,95468,95467,95458,95459,95469,95470);
+INSERT INTO `gameobject` (`guid`, `id`, `map`, `zoneId`, `areaId`, `spawnDifficulties`, `phaseUseFlags`, `PhaseId`, `PhaseGroup`, `terrainSwapMap`, `position_x`, `position_y`, `position_z`, `orientation`, `rotation0`, `rotation1`, `rotation2`, `rotation3`, `spawntimesecs`, `animprogress`, `state`, `isActive`, `ScriptName`, `VerifiedBuild`) VALUES 
 (95450, 196403, 654, 4714, 4786, 1, 0, 182, 0, -1, -1904.02, 2312.95, 39.607, 0, 0, 0, 0, 1, 180, 255, 1, 0, '', 26365),
 (95449, 196403, 654, 4714, 4786, 1, 0, 182, 0, -1, -1941.55, 2252.75, 35.7991, 0, 0, 0, 0, 1, 180, 255, 1, 0, '', 26365),
 (95452, 196403, 654, 4714, 4786, 1, 0, 182, 0, -1, -1931.98, 2245.92, 35.8118, 0, 0, 0, 0, 1, 180, 255, 1, 0, '', 26365),
@@ -295,17 +295,17 @@ INSERT INTO `gameobject` (`guid`, `id`, `map`, `zoneId`, `areaId`, `spawnMask`, 
 
 
 -- Forsaken Castaway (36488)
-UPDATE creature_template SET maxlevel=12 WHERE entry=36488;
+UPDATE `creature_template` SET `maxlevel`=12 WHERE `entry`=36488;
 
 
 -- Doodad_Worgen_Cellar_Door_02 (206693)
 DELETE FROM `gameobject` WHERE `guid`=94608;
-INSERT INTO `gameobject` (`guid`, `id`, `map`, `zoneId`, `areaId`, `spawnMask`, `phaseUseFlags`, `PhaseId`, `PhaseGroup`, `terrainSwapMap`, `position_x`, `position_y`, `position_z`, `orientation`, `rotation0`, `rotation1`, `rotation2`, `rotation3`, `spawntimesecs`, `animprogress`, `state`, `isActive`, `ScriptName`, `VerifiedBuild`) VALUES 
+INSERT INTO `gameobject` (`guid`, `id`, `map`, `zoneId`, `areaId`, `spawnDifficulties`, `phaseUseFlags`, `PhaseId`, `PhaseGroup`, `terrainSwapMap`, `position_x`, `position_y`, `position_z`, `orientation`, `rotation0`, `rotation1`, `rotation2`, `rotation3`, `spawntimesecs`, `animprogress`, `state`, `isActive`, `ScriptName`, `VerifiedBuild`) VALUES 
 (94608, 206693, 654, 4755, 4756, 1, 0, 0, 439, -1, -1880.47, 2545.83, 3.08704, 3.82227, 0.019753, 0.00699425, -0.942434, 0.333734, 180, 255, 0, 0, '', 25383);
 
 
 -- Mountain Horse (36540)
-UPDATE creature_template SET spell1=68903, unit_flags=16777216 WHERE entry=36540;
+UPDATE `creature_template` SET `spell1`=68903, `unit_flags`=16777216 WHERE `entry`=36540;
 
 
 -- NN (195466)
@@ -330,4 +330,3 @@ INSERT INTO `gameobject_template_addon` (`entry`, `faction`, `flags`, `mingold`,
 DELETE FROM `gameobject_template_addon` WHERE `entry`=195453;
 INSERT INTO `gameobject_template_addon` (`entry`, `faction`, `flags`, `mingold`, `maxgold`, `WorldEffectID`) VALUES 
 (195453, 0, 4, 0, 0, 0);
-

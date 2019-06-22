@@ -46,8 +46,8 @@ DELETE FROM `spell_areatrigger` WHERE `SpellMiscId` IN  (8762);
 INSERT INTO `spell_areatrigger` (`SpellMiscId`, `AreaTriggerId`, `MoveCurveId`, `ScaleCurveId`, `MorphCurveId`, `FacingCurveId`, `DecalPropertiesId`, `TimeToTarget`, `TimeToTargetScale`, `VerifiedBuild`) VALUES
 (8762, 8762, 2271, 0, 0, 0, 0, 9000, 9000, 23420);
 
-DELETE FROM `creature_text` WHERE `entry` = @ATTUMEN;
-INSERT INTO `creature_text`(`entry`, `groupid`, `id`, `text`, `type`, `probability`, `sound`, `comment`) VALUES
+DELETE FROM `creature_text` WHERE `CreatureID` = @ATTUMEN;
+INSERT INTO `creature_text`(`CreatureID`, `GroupID`, `ID`, `Text`, `Type`, `Probability`, `Sound`, `comment`) VALUES
 (@ATTUMEN, '0', '0', 'Ah, faithful Midnight. For many years, our countless hunts provided game for the master\'s table.', '14', '100', '58644', 'ATTUMEN - INTRO'),
 (@ATTUMEN, '1', '0', 'These days we hunt for sport... and the glory of the kill!', '14', '100', '58644', 'ATTUMEN - AGGRO'),
 (@ATTUMEN, '1', '1', 'Well, well! Another group of thieves trying to steal my horse!', '14', '100', '58645', 'ATTUMEN - AGGRO'),

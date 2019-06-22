@@ -251,7 +251,7 @@ INSERT IGNORE INTO `creature` (`id`, `map`, `zoneId`, `areaId`, `spawnDifficulti
 ( 114716, 1651, 8443, 8443, 3, 0, 0, 0, -11071.63, -1980.458, 77.35146, 3.316126, 7200, 0, 0, 0, 0, 0, 0, 0, 0, 23420), -- 114716 (Area: 8443 - Difficulty: 23)
 ( 115115, 0, 8443, 8443, 3, 0, 0, 0, 3, 0, 12, 0, 7200, 0, 0, 0, 0, 0, 0, 0, 0, 23420); -- 115115 (Area: 8443 - Difficulty: 23) (Auras: 46598 - 46598)
 
-INSERT IGNORE INTO `creature` (`id`, `map`, `zoneId`, `areaId`, `spawnMask`, `PhaseGroup`, `modelid`, `equipment_id`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecs`, `spawndist`, `currentwaypoint`, `curhealth`, `curmana`, `MovementType`, `npcflag`, `unit_flags`, `dynamicflags`, `VerifiedBuild`) VALUES
+INSERT IGNORE INTO `creature` (`id`, `map`, `zoneId`, `areaId`, `spawnDifficulties`, `PhaseGroup`, `modelid`, `equipment_id`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecs`, `spawndist`, `currentwaypoint`, `curhealth`, `curmana`, `MovementType`, `npcflag`, `unit_flags`, `dynamicflags`, `VerifiedBuild`) VALUES
 ( 114624, 1651, 8443, 8443, 3, 0, 0, 0, -10965.62, -1955.693, 80.05598, 4.555309, 7200, 0, 0, 0, 0, 0, 0, 0, 0, 23420), -- 114624 (Area: 8443 - Difficulty: 23)
 ( 115034, 1651, 8443, 8443, 3, 0, 0, 0, -10927.69, -1981.925, 49.57317, 0, 7200, 0, 0, 0, 0, 0, 0, 0, 0, 23420), -- 115034 (Area: 8443 - Difficulty: 23) (Auras: 228980 - 228980)
 ( 114625, 1651, 8443, 8443, 3, 0, 0, 0, -10919.08, -1986.719, 92.26761, 3.996804, 7200, 0, 0, 0, 0, 0, 0, 0, 0, 23420), -- 114625 (Area: 8443 - Difficulty: 23) (Auras: )
@@ -503,7 +503,7 @@ INSERT IGNORE INTO `creature` (`id`, `map`, `zoneId`, `areaId`, `spawnMask`, `Ph
 ( 116495, 1651, 8443, 8443, 3, 0, 0, 0, 4118.056, -2053.379, 730.6912, 6.022497, 7200, 0, 0, 0, 0, 0, 0, 0, 0, 23420), -- 116495 (Area: 8443 - Difficulty: 23)
 ( 115831, 1651, 8443, 8443, 3, 0, 0, 0, 4115.452, -2061.121, 730.6912, 1.575896, 7200, 0, 0, 0, 0, 0, 0, 0, 0, 23420); -- 115831 (Area: 8443 - Difficulty: 23)
 
-INSERT IGNORE INTO `creature` (`id`, `map`, `zoneId`, `areaId`, `spawnMask`, `PhaseGroup`, `modelid`, `equipment_id`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecs`, `spawndist`, `currentwaypoint`, `curhealth`, `curmana`, `MovementType`, `npcflag`, `unit_flags`, `dynamicflags`, `VerifiedBuild`) VALUES
+INSERT IGNORE INTO `creature` (`id`, `map`, `zoneId`, `areaId`, `spawnDifficulties`, `PhaseGroup`, `modelid`, `equipment_id`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecs`, `spawndist`, `currentwaypoint`, `curhealth`, `curmana`, `MovementType`, `npcflag`, `unit_flags`, `dynamicflags`, `VerifiedBuild`) VALUES
 ( 115831, 1651, 8443, 8443, 3, 0, 0, 0, 4119.58, -2041.572, 730.6911, 5.343441, 7200, 0, 0, 0, 0, 0, 0, 0, 0, 23420), -- 115831 (Area: 8443 - Difficulty: 23)
 ( 116804, 1651, 8443, 8443, 3, 0, 0, 0, 4145.182, -2059.3, 727.2621, 0, 7200, 0, 0, 0, 0, 0, 0, 0, 0, 23420), -- 116804 (Area: 8443 - Difficulty: 23)
 ( 116491, 1651, 8443, 8443, 3, 0, 0, 0, 4163.771, -2036.224, 730.6912, 4.128742, 7200, 10, 0, 0, 0, 1, 0, 0, 0, 23420), -- 116491 (Area: 8443 - Difficulty: 23) (possible waypoints or random movement)

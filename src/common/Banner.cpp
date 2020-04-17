@@ -21,16 +21,16 @@
 
 void Trinity::Banner::Show(char const* applicationName, void(*log)(char const* text), void(*logExtraInfo)())
 {
-	log(" ");
+    log(Trinity::StringFormat("%s (%s)", GitRevision::GetFullVersion(), applicationName).c_str());
 log("                                                            ");
 log("                                                            ");
-log("░                                                           ");
-log("░                                                    ▒      ");
-log("░▒                                                  ░░▒    ▒");
-log(" ▒▒                                         ░ ░▒ ▒  ░░░ ▒░ ░");
-log(" ░ ▒  ▒   ▒   ▒▒ ░  ░▒ ░ ▒░░ ░▒ ▒░       ▒ ░  ░  ▒    ░ ░  ░");
-log(" ░ ░  ░   ░   ▒     ░░   ░ ░ ░░ ░        ▒ ░░           ░   ");
-log("   ░          ░  ░   ░     ░  ░          ░  ░ ░         ░  ░");
+log("?                                                           ");
+log("?                                                    ?      ");
+log("??                                                  ???    ?");
+log(" ??                                         ? ?? ?  ??? ?? ?");
+log(" ? ?  ?   ?   ?? ?  ?? ? ??? ?? ??       ? ?  ?  ?    ? ?  ?");
+log(" ? ?  ?   ?   ?     ??   ? ? ?? ?        ? ??           ?   ");
+log("   ?          ?  ?   ?     ?  ?          ?  ? ?         ?  ?");
 log(" https://github.com/MagicStormTeam/MagicStormTeam-Legion        ");
 log(" MagicStormTeam is based on AshamaneCore        ");
 log(" https://github.com/AshamaneProject/AshamaneCore        ");
